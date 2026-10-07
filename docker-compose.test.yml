@@ -1,0 +1,55 @@
+# Compose di test: PostgreSQL usa e getta (tmpfs) + Gotenberg + runner.
+#   docker compose -f docker-compose.test.yml run --rm --build tests
+#   docker compose -f docker-compose.test.yml down -v
+name: job-aggregator-test
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: jobagg_test
+    tmpfs:
+      - /var/lib/postgresql/data
+    volumes:
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/10-init.sql:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U test -d jobagg_test']
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  gotenberg:
+    image: gotenberg/gotenberg:8
+    healthcheck:
+      test: ['CMD', 'curl', '--silent', '--fail', 'http://localhost:3000/health']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  tests:
+    image: job-aggregator-api-dev
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      target: dev
+    working_dir: /repo
+    environment:
+      NODE_ENV: test
+      DATABASE_URL: postgresql://test:test@db:5432/jobagg_test?schema=public
+      GOTENBERG_URL: http://gotenberg:3000
+      CV_DATA_DIR: /tmp/cvdata
+      CONFIG_DIR: /repo/config
+    command:
+      - sh
+      - -c
+      - |
+        set -e
+        pnpm --filter @jobagg/api exec prisma migrate deploy
+        pnpm --filter @jobagg/api test:integration
+    depends_on:
+      db:
+        condition: service_healthy
+      gotenberg:
+        condition: service_healthy

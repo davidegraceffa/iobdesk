@@ -1,0 +1,252 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Tema shadcn/ui con blu "business" neutro tendente all'azzurro come colore primario.
+ * - Il blu è riservato ad azioni primarie, elemento selezionato, focus e badge "nuovo".
+ * - I neutri sono freddi e poco saturi (tinta 250) per armonizzare col blu.
+ * - Gli avvisi usano un ambra dedicato (--warning-*), distinto dal primario.
+ * - Le tinte --tint-* distinguono i tipi di dato nelle card: retribuzione, area geografica, data.
+ * - Il contrasto WCAG AA di queste coppie è verificato da src/theme.test.ts.
+ */
+:root {
+  --radius: 0.625rem;
+
+  --background: oklch(0.985 0.004 250); /* bianco appena freddo */
+  --foreground: oklch(0.21 0.02 255);
+  --card: oklch(1 0.002 250);
+  --card-foreground: oklch(0.21 0.02 255);
+  --popover: oklch(1 0.002 250);
+  --popover-foreground: oklch(0.21 0.02 255);
+
+  --primary: oklch(0.53 0.14 245); /* blu business tendente all'azzurro */
+  --primary-foreground: oklch(0.99 0.005 250);
+  /* blu leggermente più scuro per testo e link su sfondo chiaro */
+  --primary-text: oklch(0.46 0.13 248);
+
+  --secondary: oklch(0.955 0.008 250);
+  --secondary-foreground: oklch(0.27 0.025 255);
+  --muted: oklch(0.96 0.006 250);
+  --muted-foreground: oklch(0.47 0.02 255);
+  --accent: oklch(0.95 0.03 240); /* azzurro molto chiaro per hover/selezioni */
+  --accent-foreground: oklch(0.3 0.06 250);
+
+  --destructive: oklch(0.53 0.2 27);
+  --destructive-foreground: oklch(0.99 0.005 250);
+  --success: oklch(0.47 0.12 150);
+  --success-foreground: oklch(0.99 0.005 250);
+  /* evidenza: card da notare subito (es. colloquio proposto), distinta da primario e avvisi */
+  --highlight: oklch(0.5 0.2 300);
+  --highlight-foreground: oklch(0.99 0.01 300);
+  --warning: oklch(0.96 0.05 85);
+  --warning-foreground: oklch(0.33 0.07 65);
+  --warning-border: oklch(0.8 0.13 80);
+
+  --border: oklch(0.9 0.008 250);
+  --input: oklch(0.64 0.02 250); /* bordo dei controlli: contrasto 3:1 sullo sfondo */
+  --ring: oklch(0.53 0.14 245);
+  --focus-outline: oklch(0.36 0.1 250);
+
+  /* scala del punteggio, separata dal primario: rosso → arancio → verde, sempre con etichetta testuale */
+  --score-low: oklch(0.52 0.19 27);
+  --score-low-foreground: oklch(0.99 0.005 250);
+  --score-mid: oklch(0.8 0.13 62);
+  --score-mid-foreground: oklch(0.25 0.05 55);
+  --score-high: oklch(0.46 0.12 150);
+  --score-high-foreground: oklch(0.99 0.005 250);
+
+  /* tinte per tipo di dato nelle card degli annunci */
+  --tint-salary: oklch(0.95 0.045 155);
+  --tint-salary-foreground: oklch(0.36 0.09 155);
+  --tint-geo: oklch(0.95 0.04 200);
+  --tint-geo-foreground: oklch(0.37 0.07 205);
+  --tint-date: oklch(0.95 0.035 300);
+  --tint-date-foreground: oklch(0.38 0.1 300);
+  /* avatar dell'azienda: la tinta (--avatar-hue) dipende dal nome */
+  --avatar-bg-l: 0.92;
+  --avatar-fg-l: 0.34;
+
+  --diff-added: oklch(0.93 0.07 150);
+  --diff-removed: oklch(0.93 0.05 25);
+}
+
+.dark {
+  --background: oklch(0.17 0.012 250); /* scuro freddo e neutro */
+  --foreground: oklch(0.95 0.008 250);
+  --card: oklch(0.21 0.014 250);
+  --card-foreground: oklch(0.95 0.008 250);
+  --popover: oklch(0.21 0.014 250);
+  --popover-foreground: oklch(0.95 0.008 250);
+
+  --primary: oklch(0.72 0.12 240); /* più luminoso su sfondo scuro */
+  --primary-foreground: oklch(0.18 0.03 250);
+  --primary-text: oklch(0.78 0.11 240);
+
+  --secondary: oklch(0.27 0.015 250);
+  --secondary-foreground: oklch(0.95 0.008 250);
+  --muted: oklch(0.26 0.014 250);
+  --muted-foreground: oklch(0.74 0.02 250);
+  --accent: oklch(0.32 0.05 245);
+  --accent-foreground: oklch(0.95 0.02 240);
+
+  --destructive: oklch(0.68 0.18 25);
+  --destructive-foreground: oklch(0.17 0.012 250);
+  --success: oklch(0.74 0.14 150);
+  --success-foreground: oklch(0.17 0.012 250);
+  --highlight: oklch(0.74 0.14 300);
+  --highlight-foreground: oklch(0.18 0.04 300);
+  --warning: oklch(0.3 0.05 75);
+  --warning-foreground: oklch(0.93 0.05 85);
+  --warning-border: oklch(0.6 0.11 80);
+
+  --border: oklch(0.31 0.015 250);
+  --input: oklch(0.52 0.02 250);
+  --ring: oklch(0.72 0.12 240);
+  --focus-outline: oklch(0.78 0.11 240);
+
+  --score-low: oklch(0.7 0.17 25);
+  --score-low-foreground: oklch(0.17 0.012 250);
+  --score-mid: oklch(0.8 0.13 62);
+  --score-mid-foreground: oklch(0.2 0.04 55);
+  --score-high: oklch(0.76 0.14 150);
+  --score-high-foreground: oklch(0.17 0.012 250);
+
+  --tint-salary: oklch(0.3 0.05 155);
+  --tint-salary-foreground: oklch(0.9 0.08 155);
+  --tint-geo: oklch(0.3 0.045 205);
+  --tint-geo-foreground: oklch(0.9 0.06 200);
+  --tint-date: oklch(0.31 0.05 300);
+  --tint-date-foreground: oklch(0.9 0.05 300);
+  --avatar-bg-l: 0.36;
+  --avatar-fg-l: 0.93;
+
+  --diff-added: oklch(0.34 0.07 150);
+  --diff-removed: oklch(0.34 0.07 25);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-text: var(--primary-text);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-highlight: var(--highlight);
+  --color-highlight-foreground: var(--highlight-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-border: var(--warning-border);
+  --color-tint-salary: var(--tint-salary);
+  --color-tint-salary-foreground: var(--tint-salary-foreground);
+  --color-tint-geo: var(--tint-geo);
+  --color-tint-geo-foreground: var(--tint-geo-foreground);
+  --color-tint-date: var(--tint-date);
+  --color-tint-date-foreground: var(--tint-date-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-focus-outline: var(--focus-outline);
+  --color-score-low: var(--score-low);
+  --color-score-low-foreground: var(--score-low-foreground);
+  --color-score-mid: var(--score-mid);
+  --color-score-mid-foreground: var(--score-mid-foreground);
+  --color-score-high: var(--score-high);
+  --color-score-high-foreground: var(--score-high-foreground);
+  --color-diff-added: var(--diff-added);
+  --color-diff-removed: var(--diff-removed);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  /* Focus: contorno ad alto contrasto + alone del colore primario. Vale per ogni elemento interattivo. */
+  :focus-visible {
+    outline: 2px solid var(--focus-outline);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 5px color-mix(in oklab, var(--ring) 55%, transparent);
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 45%, transparent);
+  }
+}
+
+/* Avatar con le iniziali dell'azienda: stessa luminosità per tutte, tinta derivata dal nome. */
+.company-avatar {
+  background: oklch(var(--avatar-bg-l) 0.07 var(--avatar-hue, 250));
+  color: oklch(var(--avatar-fg-l) 0.09 var(--avatar-hue, 250));
+}
+
+/* Descrizione originale dell'annuncio: HTML sanitizzato dalla fonte, formattazione preservata. */
+.job-description {
+  @apply text-sm leading-relaxed break-words;
+}
+.job-description :where(p, ul, ol, blockquote, pre, table) {
+  @apply my-3;
+}
+.job-description :where(h1, h2, h3, h4, h5, h6) {
+  @apply mt-5 mb-2 font-semibold text-base;
+}
+.job-description :where(ul) {
+  @apply list-disc pl-5;
+}
+.job-description :where(ol) {
+  @apply list-decimal pl-5;
+}
+.job-description :where(li) {
+  @apply my-1;
+}
+.job-description :where(a) {
+  @apply text-primary-text underline underline-offset-2;
+}
+.job-description :where(pre, code) {
+  @apply rounded bg-muted px-1 text-xs;
+}
+.job-description :where(blockquote) {
+  @apply border-l-2 pl-3 text-muted-foreground;
+}
+.job-description :where(td, th) {
+  @apply border px-2 py-1 align-top;
+}
+.job-description > :first-child {
+  @apply mt-0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

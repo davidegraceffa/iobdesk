@@ -1,0 +1,86 @@
+# Seed iniziale delle impostazioni.
+# Viene letto UNA SOLA VOLTA, al primo avvio, quando la tabella UserSettings è vuota.
+# Dopo il seed la fonte di verità è il database: le impostazioni si modificano dalla sezione Profilo.
+#
+# `user.country` e `user.has_vat_number` sono lasciati commentati apposta: al primo avvio
+# l'app mostra l'onboarding e non avvia raccolte finché non lo completi.
+# Se preferisci saltarlo, valorizzali qui prima del primo `docker compose up`.
+
+user:
+  # country: "IT"               # ISO 3166-1 alpha-2
+  # timezone: "Europe/Rome"     # opzionale, derivato dal paese se assente
+  # has_vat_number: true        # P.IVA / VAT number o equivalente
+
+profile:
+  title: 'Full-stack TypeScript Developer'
+  summary: >
+    Full-stack developer con base TypeScript: Node.js, NestJS, React, PostgreSQL.
+    Cerco remoto full-time o contract anche part-time.
+
+keywords:
+  required_any: ['typescript', 'node.js', 'nodejs', 'react', 'next.js', 'nestjs', 'full stack', 'fullstack']
+  boost: ['typescript', 'nestjs', 'react', 'postgres', 'aws']
+  exclude: ['php', 'wordpress', 'unpaid', 'equity only']
+
+# cv:
+#   review: { enabled: true, interval_days: 7 } # controllo periodico dei CV base (sezione Migliora CV)
+
+companies:
+  blocked: [] # aziende di cui non vuoi vedere le offerte
+
+seniority:
+  include: ['mid', 'senior']
+  exclude: ['intern', 'junior']
+
+location:
+  remote_only: true
+  extra_accepted_regions: [] # oltre a quelle derivate dal paese
+  extra_rejected_patterns: [] # oltre a quelle generate automaticamente
+  max_timezone_offset_hours: 3
+
+contract:
+  types: ['full-time', 'contract', 'freelance', 'part-time']
+  without_vat_policy: 'penalize' # penalize | exclude | keep (usato se has_vat_number è false)
+
+compensation:
+  min_yearly: 45000 # nella valuta del paese dell'utente
+  min_daily_rate: 300
+  allow_missing: true
+  fx_rates_to_local: # tassi statici, aggiornabili a mano
+    USD: 0.92
+    GBP: 1.17
+    CHF: 1.05
+
+freshness:
+  max_age_days: 21
+
+scoring:
+  llm:
+    enabled: false
+    provider: 'ollama' # ollama | anthropic | openai
+    model: 'llama3.1'
+    min_score_to_notify: 70
+
+notifications:
+  telegram:
+    enabled: false
+    min_score: 70
+
+# candidature lette da Gmail (sola lettura): serve il client OAuth in .env e il collegamento dal Profilo
+mail_sync:
+  enabled: false
+  interval_minutes: 180
+  newer_than_days: 60
+
+cv:
+  languages: ['it', 'en'] # fino a 3 tra: it, en, es, de, fr, pt, nl
+
+sources:
+  remotive: { enabled: true, interval_minutes: 120 }
+  remoteok: { enabled: true, interval_minutes: 120 }
+  arbeitnow: { enabled: true, interval_minutes: 180 }
+  himalayas: { enabled: true, interval_minutes: 180 }
+  jobicy: { enabled: true, interval_minutes: 180 }
+  weworkremotely: { enabled: true, interval_minutes: 120 }
+  hn_whoishiring: { enabled: true, interval_minutes: 720 }
+  email_alerts: { enabled: false, interval_minutes: 60 }

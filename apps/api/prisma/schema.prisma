@@ -1,0 +1,390 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Annuncio normalizzato. I campi derivati dalle impostazioni (regioni compatibili,
+/// stipendio convertito, motivo di scarto, punteggio) vengono ricalcolati a ogni salvataggio del Profilo.
+model Job {
+  /// hash stabile di fonte + id esterno (o URL)
+  id                  String                   @id
+  source              String
+  sourceUrl           String
+  /// URL canonico (senza query di tracking) usato per la deduplicazione
+  canonicalUrl        String?
+  externalId          String?
+  title               String
+  company             String
+  companyUrl          String?
+  /// titolo e azienda normalizzati per la similarità pg_trgm
+  titleNorm           String
+  companyNorm         String
+  /// testo/HTML originale integrale
+  descriptionOriginal String
+  /// stessa descrizione, sanitizzata per la visualizzazione
+  descriptionHtml     String
+  /// versione solo testo per ricerca full-text, anteprime e analisi
+  descriptionText     String
+  language            String?
+  applyUrl            String?
+  applyMethod         String                   @default("source_page")
+  techStack           Json
+  salaryFound         Boolean                  @default(false)
+  salaryRawText       String?
+  salaryMin           Float?
+  salaryMax           Float?
+  salaryCurrency      String?
+  salaryPeriod        String?
+  salaryLocalMin      Float?
+  salaryLocalMax      Float?
+  /// StoredSalaryEstimate: stima dell'LLM chiesta dall'utente quando l'annuncio non indica la retribuzione
+  salaryEstimate      Json?
+  tags                String[]
+  location            String
+  remote              String                   @default("unknown")
+  regions             String[]
+  restrictedCountries String[]
+  timezoneOffsets     Float[]
+  contractType        String                   @default("unknown")
+  requiresVat         Boolean?
+  viaEor              Boolean                  @default(false)
+  seniority           String                   @default("unknown")
+  publishedAt         DateTime?
+  firstSeenAt         DateTime                 @default(now())
+  lastSeenAt          DateTime                 @default(now())
+  ruleScore           Int                      @default(0)
+  scoreBreakdown      Json
+  llmScore            Int?
+  llmReason           String?
+  llmRedFlags         String[]
+  rejectedReason      String?
+  status              String                   @default("new")
+  notes               String?
+  notifiedAt          DateTime?
+  duplicateOfId       String?
+  duplicateOf         Job?                     @relation("JobDuplicates", fields: [duplicateOfId], references: [id], onDelete: SetNull)
+  duplicates          Job[]                    @relation("JobDuplicates")
+  /// colonna generata (vedi migrazione): titolo, azienda e descrizione
+  searchVector        Unsupported("tsvector")?
+
+  applications      Application[]
+  generatedCvs      GeneratedCv[]
+  coverLetters      CoverLetter[]
+  interviewSessions InterviewSession[]
+
+  @@index([status])
+  @@index([ruleScore])
+  @@index([publishedAt])
+  @@index([source])
+  @@index([canonicalUrl])
+  @@index([duplicateOfId])
+  @@index([searchVector], type: Gin)
+  @@index([titleNorm(ops: raw("gin_trgm_ops"))], type: Gin, map: "Job_titleNorm_trgm_idx")
+  @@index([companyNorm(ops: raw("gin_trgm_ops"))], type: Gin, map: "Job_companyNorm_trgm_idx")
+}
+
+/// Candidatura. Sopravvive alla cancellazione dell'annuncio grazie allo snapshot.
+model Application {
+  id            String       @id @default(cuid())
+  jobId         String?
+  job           Job?         @relation(fields: [jobId], references: [id], onDelete: SetNull)
+  appliedAt     DateTime
+  channel       String
+  currentStatus String       @default("applied")
+  notes         String?
+  contactName   String?
+  contactEmail  String?
+  generatedCvId String?
+  generatedCv   GeneratedCv? @relation(fields: [generatedCvId], references: [id], onDelete: SetNull)
+  /// id della candidatura nel file da cui è stata importata: reimportare aggiorna, non duplica
+  externalId    String?      @unique
+  /// nazione dell'annuncio (testo libero, es. "Italia", "Remoto")
+  country       String?
+  /// quale CV è stato inviato e in che lingua, quando non è un CV generato dall'app
+  cvSent        String?
+  cvLanguage    String?
+  /// come è stata tracciata la candidatura (es. "Da email")
+  trackingMode  String?
+  /// snapshot dell'annuncio al momento della candidatura
+  snapshot      Json
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  events            ApplicationEvent[]
+  interviewSessions InterviewSession[]
+
+  @@index([jobId])
+  @@index([currentStatus])
+  @@index([appliedAt])
+  @@index([country])
+}
+
+model ApplicationEvent {
+  id            String      @id @default(cuid())
+  applicationId String
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  at            DateTime    @default(now())
+  fromStatus    String?
+  toStatus      String
+  note          String?
+
+  @@index([applicationId, at])
+}
+
+/// Impostazioni utente: una sola riga (id = 1). Fonte di verità dopo il seed da config/search.yaml.
+model UserSettings {
+  id        Int      @id @default(1)
+  data      Json
+  version   Int      @default(1)
+  updatedAt DateTime @updatedAt
+}
+
+model UserSettingsHistory {
+  id      String   @id @default(cuid())
+  version Int
+  data    Json
+  reason  String   @default("save")
+  savedAt DateTime @default(now())
+
+  @@index([savedAt])
+}
+
+model FetchRun {
+  id         String    @id @default(cuid())
+  source     String
+  trigger    String    @default("schedule")
+  startedAt  DateTime  @default(now())
+  finishedAt DateTime?
+  status     String    @default("running")
+  found      Int       @default(0)
+  created    Int       @default(0)
+  updated    Int       @default(0)
+  duplicates Int       @default(0)
+  rejected   Int       @default(0)
+  error      String?
+  message    String?
+
+  @@index([source, startedAt])
+}
+
+/// Sincronizzazione delle candidature da Gmail: una riga per esecuzione (le anteprime non vengono salvate).
+model MailSyncRun {
+  id         String    @id @default(cuid())
+  trigger    String    @default("schedule")
+  startedAt  DateTime  @default(now())
+  finishedAt DateTime?
+  status     String    @default("running")
+  examined   Int       @default(0)
+  created    Int       @default(0)
+  updated    Int       @default(0)
+  duplicates Int       @default(0)
+  ignored    Int       @default(0)
+  error      String?
+  /// candidature create/aggiornate, rifiuti ambigui, email scartate
+  details    Json      @default("{}")
+
+  @@index([startedAt])
+}
+
+model SourceState {
+  source        String    @id
+  lastSuccessAt DateTime?
+  lastAttemptAt DateTime?
+  lastError     String?
+  /// ETag / Last-Modified per URL
+  httpCache     Json      @default("{}")
+}
+
+model BaseCv {
+  id               String   @id @default(cuid())
+  /// ISO 639-1
+  language         String
+  version          Int
+  /// versione in uso per quella lingua
+  isActive         Boolean  @default(true)
+  originalFileName String
+  docxPath         String
+  pdfPath          String?
+  pageCount        Int      @default(0)
+  /// paragrafi, sezioni, correzioni manuali dell'utente
+  structure        Json
+  error            String?
+  /// CvAtsReport: valutazione di compatibilità con i sistemi ATS, chiesta dall'utente per questa versione
+  atsReport        Json?
+  uploadedAt       DateTime @default(now())
+
+  generatedCvs GeneratedCv[]
+  coverLetters CoverLetter[]
+  reviews      CvReview[]
+
+  @@unique([language, version])
+  @@index([language, isActive])
+}
+
+model GeneratedCv {
+  id               String   @id @default(cuid())
+  jobId            String?
+  job              Job?     @relation(fields: [jobId], references: [id], onDelete: SetNull)
+  baseCvId         String
+  baseCv           BaseCv   @relation(fields: [baseCvId], references: [id], onDelete: Restrict)
+  language         String
+  /// più generazioni per lo stesso annuncio
+  version          Int
+  status           String   @default("queued")
+  step             String   @default("queued")
+  error            String?
+  warning          String?
+  userInstructions String?
+  provider         String
+  model            String
+  /// titolo e azienda copiati dall'annuncio: restano anche se l'annuncio viene eliminato
+  jobTitle         String
+  company          String
+  /// descrizione incollata a mano dall'utente: presente solo per i CV generati senza un annuncio raccolto
+  descriptionText  String?
+  analysis         Json?
+  /// CvEmailDto: testo dell'email con cui inviare questo CV, scritto su richiesta
+  email            Json?
+  /// CvEdits applicati (dopo gli scarti), con stato accettata/rifiutata
+  edits            Json     @default("[]")
+  /// modifiche scartate dal controllo anti-invenzione e motivo
+  rejectedEdits    Json     @default("[]")
+  /// ritocchi fatti a mano dall'utente
+  manualEdits      Json     @default("{}")
+  gaps             Json     @default("[]")
+  matchSummary     Json     @default("{}")
+  docxPath         String?
+  pdfPath          String?
+  pageCount        Int?
+  createdAt        DateTime @default(now())
+
+  applications Application[]
+
+  @@index([jobId])
+}
+
+/// Controllo periodico (o richiesto a mano) di un CV base: cosa è migliorabile e le modifiche proposte.
+model CvReview {
+  id          String    @id @default(cuid())
+  baseCvId    String
+  baseCv      BaseCv    @relation(fields: [baseCvId], references: [id], onDelete: Cascade)
+  /// ISO 639-1
+  language    String
+  /// "schedule" oppure "manual"
+  trigger     String    @default("schedule")
+  status      String    @default("running")
+  error       String?
+  provider    String
+  model       String
+  summary     String    @default("")
+  /// CvReviewSuggestion[], con lo stato deciso dall'utente (aperto, fatto, ignorato)
+  suggestions Json      @default("[]")
+  /// versione del CV base generata applicando le proposte di questo controllo, se ce n'è una
+  resultBaseCvId String?
+  createdAt   DateTime  @default(now())
+  finishedAt  DateTime?
+
+  @@index([language, createdAt])
+}
+
+/// Lettera di candidatura scritta dall'LLM per un annuncio, a partire dai contenuti del CV base.
+model CoverLetter {
+  id               String   @id @default(cuid())
+  jobId            String?
+  job              Job?     @relation(fields: [jobId], references: [id], onDelete: SetNull)
+  /// CV base da cui sono presi i fatti (può essere in una lingua diversa da quella della lettera)
+  baseCvId         String
+  baseCv           BaseCv   @relation(fields: [baseCvId], references: [id], onDelete: Restrict)
+  /// ISO 639-1
+  language         String
+  /// più lettere per lo stesso annuncio
+  version          Int
+  status           String   @default("generating")
+  error            String?
+  warning          String?
+  userInstructions String?
+  provider         String
+  model            String
+  /// titolo e azienda copiati dall'annuncio: restano anche se l'annuncio viene eliminato
+  jobTitle         String
+  company          String
+  subject          String   @default("")
+  /// dal saluto alla firma, paragrafi separati da una riga vuota
+  body             String   @default("")
+  /// il testo è stato ritoccato a mano dall'utente
+  edited           Boolean  @default(false)
+  docxPath         String?
+  pdfPath          String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([jobId])
+}
+
+/// Colloquio simulato su un annuncio: domande generate dall'LLM nella lingua dell'offerta.
+model InterviewSession {
+  id              String       @id @default(cuid())
+  jobId           String?
+  job             Job?         @relation(fields: [jobId], references: [id], onDelete: SetNull)
+  /// colloquio avviato da una candidatura (anche senza annuncio collegato)
+  applicationId   String?
+  application     Application? @relation(fields: [applicationId], references: [id], onDelete: SetNull)
+  /// numero del tentativo per lo stesso annuncio o candidatura: ogni tentativo ha domande nuove
+  attempt         Int          @default(1)
+  /// titolo e azienda copiati dall'annuncio: restano anche se l'annuncio viene eliminato
+  jobTitle        String
+  company         String
+  /// testo dell'annuncio usato per domande e valutazioni (dall'annuncio o incollato dall'utente)
+  descriptionText String       @default("")
+  /// ISO 639-1
+  language        String
+  questionCount   Int
+  status          String       @default("generating")
+  error           String?
+  provider        String
+  model           String
+  /// InterviewQuestion[]
+  questions       Json         @default("[]")
+  /// InterviewBrief: temi principali del colloquio ricavati dall'annuncio, mostrati prima di iniziare
+  brief           Json?
+  /// "live" = conversazione a voce con contro-domande, "turns" = una risposta per domanda
+  mode            String       @default("turns")
+  /// InterviewTurn[]: tutto ciò che si sono detti intervistatore e candidato (solo testo)
+  transcript      Json         @default("[]")
+  finishedAt      DateTime?
+  /// InterviewReport: livello di lingua, correttezza dei contenuti, tono
+  report          Json?
+  reportStatus    String?
+  reportError     String?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  answers InterviewAnswer[]
+
+  @@index([jobId])
+  @@index([applicationId])
+  @@index([createdAt])
+}
+
+/// Risposta a una domanda (trascritta dall'audio o scritta) con la valutazione dell'LLM. L'audio non viene salvato.
+model InterviewAnswer {
+  id          String           @id @default(cuid())
+  sessionId   String
+  session     InterviewSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  questionId  String
+  transcript  String
+  inputMode   String           @default("audio")
+  durationSec Int?
+  status      String           @default("pending")
+  /// InterviewFeedback
+  feedback    Json?
+  error       String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@unique([sessionId, questionId])
+}

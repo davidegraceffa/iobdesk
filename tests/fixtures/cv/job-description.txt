@@ -1,0 +1,22 @@
+Senior Backend Engineer (Node.js / NestJS) — Fully remote, Europe
+
+Meridian Freight is building the operating system for mid-size logistics companies. We are a team of 30, remote-first across Europe.
+
+What you will do
+- Design and build REST APIs with NestJS and PostgreSQL
+- Own CI/CD pipelines and container deployments (Docker, Kubernetes)
+- Work closely with the frontend team (React, Next.js)
+- Mentor other engineers and review code
+
+Requirements
+- 5+ years of experience with TypeScript and Node.js
+- Strong experience with NestJS and relational databases (PostgreSQL)
+- Experience with automated testing (Jest) and CI/CD
+- Good written English
+
+Nice to have
+- Kubernetes and Terraform
+- Experience with Kafka or RabbitMQ
+- GraphQL
+
+Salary: €65k–80k gross/year. Apply at https://jobs.lever.co/meridianfreight/senior-backend-engineer

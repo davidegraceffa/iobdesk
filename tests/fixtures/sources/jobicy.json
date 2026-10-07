@@ -1,0 +1,322 @@
+{
+ "apiVersion": "2.2.18",
+ "documentationUrl": "https://jobi.cy/apidocs",
+ "friendlyNotice": "Thanks for using Jobicy API! Please ensure Jobicy is clearly credited with a direct link to the source, and all application buttons redirect to the original job URL provided in this feed. That’s all! You might be building something amazing, we wish you the best of luck!",
+ "jobCount": 14,
+ "lastUpdate": "2026-10-01T05:31:59+00:00",
+ "nextCursor": "eyJ2IjoxLCJ0IjoxNzkwODU5MDQxLCJkIjoiMjAyNi0wOS0yOSAxMzozOToxNCIsImkiOjE1NDE4MywiZiI6IjRkMzM1NjE0MjQyM2MyNTg3YzY3OGUyZjY2Y2Q3OTJjMmZhNjMxOGU1N2JmYTIwMzViZTFiOGZjOTFkZjIxMmYifQ.e1653d360cc195597e0646145449939e2b43a432fc531b818653963b8076cee7",
+ "hasMore": true,
+ "appliedFilters": {
+  "count": 50,
+  "industry": "engineering"
+ },
+ "jobs": [
+  {
+   "id": 9500001,
+   "url": "https://jobicy.com/jobs/9500001-software-engineer-i-agentic-platform-emea-poland-remote-b2b",
+   "jobSlug": "9500001-software-engineer-i-agentic-platform-emea-poland-remote-b2b",
+   "jobTitle": "Software Engineer I, Agentic Platform EMEA (Poland, Remote, B2B)",
+   "companyName": "Onyx Works",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "Poland",
+   "jobLevel": "Any",
+   "jobExcerpt": "Who we are Onyx Works (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things…",
+   "jobDescription": "<p><strong>Who we are</strong></p>\n<p><a href=\"https://jobicy.com/company/Onyx Works\" target=\"_blank\" rel=\"noopener\">Onyx Works</a> (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Onyx Works, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global economy. Representing more than 40% of global GDP, these industries are the infrastructure of our planet, including agriculture, construction, field services, transportation, and…",
+   "pubDate": "2026-10-01T05:31:59+00:00",
+   "salaryMin": 300900,
+   "salaryMax": 354000,
+   "salaryCurrency": "PLN",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 9500002,
+   "url": "https://jobicy.com/jobs/9500002-senior-software-engineer-agentic-customer-platform-poland-remote-b2b",
+   "jobSlug": "9500002-senior-software-engineer-agentic-customer-platform-poland-remote-b2b",
+   "jobTitle": "Senior Software Engineer, Agentic Customer Platform (Poland, Remote, B2B)",
+   "companyName": "Onyx Works",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Contract"
+   ],
+   "jobGeo": "Poland",
+   "jobLevel": "Senior",
+   "jobExcerpt": "Who we are Onyx Works (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things…",
+   "jobDescription": "<p><strong>Who we are</strong></p>\n<p><a href=\"https://jobicy.com/company/Onyx Works\" target=\"_blank\" rel=\"noopener\">Onyx Works</a> (NYSE: IOT) is the pioneer of the Connected Operations™ Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Onyx Works, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global economy. Representing more than 40% of global GDP, these industries are the infrastructure of our planet, including agriculture, construction, field services, transportation, and…",
+   "pubDate": "2026-10-01T05:31:56+00:00"
+  },
+  {
+   "id": 9500003,
+   "url": "https://jobicy.com/jobs/9500003-senior-software-engineer-canvas-core-2",
+   "jobSlug": "9500003-senior-software-engineer-canvas-core-2",
+   "jobTitle": "Senior Software Engineer, Canvas Core",
+   "companyName": "Pine Digital",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "Argentina,  Canada,  UK",
+   "jobLevel": "Senior",
+   "jobExcerpt": "ABOUT THE TEAM The Canvas Core team builds and maintains the foundational platform that powers Pine Digital’s visual thinking experience. This includes the infinite canvas, key editor components,…",
+   "jobDescription": "\n<h3>ABOUT THE TEAM</h3>\n<p>The Canvas Core team builds and maintains the foundational platform that powers <a href=\"https://jobicy.com/company/Pine Digital\" target=\"_blank\" rel=\"noopener\">Pine Digital</a>’s visual thinking experience. This includes the infinite canvas, key editor components, document editing behaviors, asset management, real-time collaboration, and the systems that enable fast, reliable, and intuitive interaction on the canvas.</p>\n<p>",
+   "pubDate": "2026-10-01T05:28:55+00:00",
+   "salaryMin": 82400,
+   "salaryMax": 103000,
+   "salaryCurrency": "GBP",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 9500004,
+   "url": "https://jobicy.com/jobs/9500004-android-engineer-c",
+   "jobSlug": "9500004-android-engineer-c",
+   "jobTitle": "Android Engineer (C++)",
+   "companyName": "Quartz Software",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "APAC",
+   "jobLevel": "Any",
+   "jobExcerpt": "Responsibilities Design and implement cross-platform mobile features for both Android and iOS using modern C++. Design and implement new features for our in-house mobile browser kernel based on…",
+   "jobDescription": "<h3>Responsibilities</h3>\n<ul>\n<li>Design and implement cross-platform mobile features for both Android and iOS using modern C++.</li>\n<li>Design and implement new features for our in-house mobile browser kernel based on Chromium, with a focus on Android and iOS.</li>\n<li>Design and implement new features for our in-house mobile game engine based on OpenGL ES and native graphics technologies.</li>\n<li>Explore and integrate AI capabilities into mobile applications, including on-device AI inference, LLMs, intelligent agents, and AI-powered user experiences.</li>\n<li>",
+   "pubDate": "2026-10-01T04:40:03+00:00"
+  },
+  {
+   "id": 9500005,
+   "url": "https://jobicy.com/jobs/9500005-android-engineer",
+   "jobSlug": "9500005-android-engineer",
+   "jobTitle": "Android Engineer",
+   "companyName": "Quartz Software",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "APAC",
+   "jobLevel": "Any",
+   "jobExcerpt": "Quartz Software is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+…",
+   "jobDescription": "<p><a href=\"https://jobicy.com/company/Quartz Software\" target=\"_blank\" rel=\"noopener\">Quartz Software</a> is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Quartz Software offerings range from trading and finance to education, research, payments, institutional services, Web3 features, and more. We leverage the power of digital assets and blockchain to build an inclusive financial ecosystem to advance the…",
+   "pubDate": "2026-10-01T04:40:01+00:00"
+  },
+  {
+   "id": 9500006,
+   "url": "https://jobicy.com/jobs/9500006-software-engineer-content-platform",
+   "jobSlug": "9500006-software-engineer-content-platform",
+   "jobTitle": "Software Engineer, Content Platform",
+   "companyName": "Reed Studio",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Any",
+   "jobExcerpt": "Reed Studio is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reed Studio users…",
+   "jobDescription": "<p><a href=\"https://jobicy.com/company/Reed Studio\" target=\"_blank\" rel=\"noopener\">Reed Studio</a> is a community of communities. It’s built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reed Studio users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reed Studio is one of the internet’s largest sources of information. For more information, visit <a href=\"https://example.com/\" rel=\"nofollow ugc noopener\" target=\"_blank\">example.com</a>.</p>\n<p>",
+   "pubDate": "2026-10-01T04:05:16+00:00",
+   "salaryMin": 164200,
+   "salaryMax": 229900,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 9500007,
+   "url": "https://jobicy.com/jobs/9500007-forward-deployed-engineer",
+   "jobSlug": "9500007-forward-deployed-engineer",
+   "jobTitle": "Forward Deployed Engineer",
+   "companyName": "Slate Networks",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Any",
+   "jobExcerpt": "About Us Slate Networks is using zero-knowledge proofs to enable new types of verifiable and private software applications, starting with crypto and fintech. We are a small but incredibly strong team…",
+   "jobDescription": "<p><strong>About Us</strong></p>\n<p><a href=\"https://jobicy.com/company/Slate Networks\" target=\"_blank\" rel=\"noopener\">Slate Networks</a> is using zero-knowledge proofs to enable new types of verifiable and private software applications, starting with crypto and fintech. We are a small but incredibly strong team backed by the <a href=\"https://example.com/funding/\" rel=\"nofollow ugc noopener\" target=\"_blank\"><u>best investors in crypto</u></a>. We’re looking for exceptional people who are excited to work on challenging and impactful problems in a fast-paced environment. Our office is in NYC and working in person in NY is our strong preference, but we're open to remote candidates as well.</p>",
+   "pubDate": "2026-10-01T04:05:06+00:00",
+   "salaryMin": 125000,
+   "salaryMax": 200000,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 9500008,
+   "url": "https://jobicy.com/jobs/9500008-distributed-systems-engineer-2",
+   "jobSlug": "9500008-distributed-systems-engineer-2",
+   "jobTitle": "Distributed Systems Engineer",
+   "companyName": "Slate Networks",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Any",
+   "jobExcerpt": "About Us Slate Networks is using zero-knowledge proofs to enable new types of verifiable and private software applications, starting with crypto and fintech. We are a small but incredibly strong team…",
+   "jobDescription": "<p><strong>About Us</strong></p>\n<p><a href=\"https://jobicy.com/company/Slate Networks\" target=\"_blank\" rel=\"noopener\">Slate Networks</a> is using zero-knowledge proofs to enable new types of verifiable and private software applications, starting with crypto and fintech. We are a small but incredibly strong team backed by the <a href=\"https://example.com/funding/\" rel=\"nofollow ugc noopener\" target=\"_blank\"><u>best investors in crypto</u></a>. We’re looking for exceptional people who are excited to work on challenging and impactful problems in a fast-paced environment. Our office is in NYC and working in person in NY is our strong preference, but we're open to remote candidates as well.</p>",
+   "pubDate": "2026-10-01T04:05:05+00:00",
+   "salaryMin": 125000,
+   "salaryMax": 250000,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 9500009,
+   "url": "https://jobicy.com/jobs/9500009-zk-proof-engineer",
+   "jobSlug": "9500009-zk-proof-engineer",
+   "jobTitle": "ZK Proof Engineer",
+   "companyName": "Slate Networks",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Any",
+   "jobExcerpt": "About Us Slate Networks is using zero-knowledge proofs to enable new types of verifiable and private software applications, starting with crypto and fintech. We are a small but incredibly strong team…",
+   "jobDescription": "<p><strong>About Us</strong></p>\n<p><a href=\"https://jobicy.com/company/Slate Networks\" target=\"_blank\" rel=\"noopener\">Slate Networks</a> is using zero-knowledge proofs to enable new types of verifiable and private software applications, starting with crypto and fintech. We are a small but incredibly strong team backed by the <a href=\"https://example.com/funding/\" rel=\"nofollow ugc noopener\" target=\"_blank\"><u>best investors in crypto</u></a>. We’re looking for exceptional people who are excited to work on challenging and impactful problems in a fast-paced environment. Our office is in NYC and working in person in NY is our strong preference, but we're open to remote candidates as well.</p>",
+   "pubDate": "2026-10-01T04:05:03+00:00",
+   "salaryMin": 125000,
+   "salaryMax": 250000,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "yearly"
+  },
+  {
+   "id": 9500010,
+   "url": "https://jobicy.com/jobs/9500010-ads-quality-rater-spanish-mexico",
+   "jobSlug": "9500010-ads-quality-rater-spanish-mexico",
+   "jobTitle": "Ads Quality Rater - Spanish (Mexico)",
+   "companyName": "Tundra Systems",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "QA & Testing"
+   ],
+   "jobType": [
+    "Contract"
+   ],
+   "jobGeo": "Mexico",
+   "jobLevel": "Any",
+   "jobExcerpt": "Introducción ¿Manejas los buscadores como un genio? ¿Encuentras lo que buscas con un par de palabras clave? Tundra Data está buscando a una persona de habla española de España para participar en un…",
+   "jobDescription": "<p><b>Introducción</b></p>\n\n<p><b>¿Manejas los buscadores como un genio? ¿Encuentras lo que buscas con un par de palabras clave? </b>Tundra Data está buscando a una persona de habla española de España para participar en un proyecto de cliente como <b>evaluador de calidad de anuncios </b>(<b>Ads Quality Rater</b>). </p>\n\n<p>Usarás una herramienta única, basada en la web para evaluar los anuncios de los buscadores en función de las pautas del proyecto.<b> </b></p>\n\n<p><b>Requisitos</b></p>\n\n<p>- Fluidez en español</p>\n<p>- Deberán ser de España y estar ubicados en Mexico</p>\n<p>- <b>18+ </b></p>\n<p>- Alta comprensión del inglés, hablado y escrito</p>\n<p>",
+   "pubDate": "2026-10-01T04:00:40+00:00",
+   "salaryMin": 4,
+   "salaryMax": 4,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "hourly"
+  },
+  {
+   "id": 9500011,
+   "url": "https://jobicy.com/jobs/9500011-ads-quality-rater-italian-brazil",
+   "jobSlug": "9500011-ads-quality-rater-italian-brazil",
+   "jobTitle": "Ads Quality Rater - Italian (Brazil)",
+   "companyName": "Tundra Systems",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "QA & Testing"
+   ],
+   "jobType": [
+    "Contract"
+   ],
+   "jobGeo": "Brazil",
+   "jobLevel": "Any",
+   "jobExcerpt": "Tundra Data is an award-winning localization and data transformation company. We run one of the world’s largest Ads Rating Programs and we want you to join! As an Ads Quality Rater, you will review…",
+   "jobDescription": "<p><b>Tundra Data</b> is an award-winning localization and data transformation company. We run one of the world’s largest Ads Rating Programs and we want you to join! </p>\n<p><b>As an </b><i><b>Ads Quality Rater</b></i><b>, you will review and grade internet advertisements to help shape how ads are delivered to the end users.</b> In other words, you’ll tell the AI program how good or bad its advertisement suggestions are based on the user’s keywords.</p>\n<p>You will review ads in both <b>English </b>and <b>Italian</b></p>\n<p><b>This role is great for people who:</b> </p>\n<p>- Surf the internet daily </p>\n<p>- Use major search engines frequently </p>\n<p>",
+   "pubDate": "2026-10-01T04:00:39+00:00",
+   "salaryMin": 6,
+   "salaryMax": 6,
+   "salaryPeriod": "hourly"
+  },
+  {
+   "id": 9500012,
+   "url": "https://jobicy.com/jobs/9500012-advanced-software-engineer-customer-success",
+   "jobSlug": "9500012-advanced-software-engineer-customer-success",
+   "jobTitle": "Advanced Software Engineer - Customer Success",
+   "companyName": "Umber Works",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "Brazil",
+   "jobLevel": "Senior",
+   "jobExcerpt": "At Umber Works, we're building a world of safer money. A world where financial institutions move faster than criminals. Where the payments that fund real lives through salaries, savings, and…",
+   "jobDescription": "<p>At <a href=\"https://jobicy.com/company/Umber Works\" target=\"_blank\" rel=\"noopener\">Umber Works</a>, we're building a world of safer money. A world where financial institutions move faster than criminals. Where the payments that fund real lives through salaries, savings, and businesses are protected in real time. We use trusted AI to detect and prevent financial crime, fraud, and money laundering at scale: the world's top banks, payment networks, and acquirers trust our technology to safeguard more than one billion consumers and $9 trillion in payment volume every year. </p>\n<p>",
+   "pubDate": "2026-10-01T04:00:37+00:00"
+  },
+  {
+   "id": 9500013,
+   "url": "https://jobicy.com/jobs/9500013-ads-quality-rater-german-brazil",
+   "jobSlug": "9500013-ads-quality-rater-german-brazil",
+   "jobTitle": "Ads Quality Rater - German (Brazil)",
+   "companyName": "Tundra Systems",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "QA & Testing"
+   ],
+   "jobType": [
+    "Contract"
+   ],
+   "jobGeo": "Brazil",
+   "jobLevel": "Any",
+   "jobExcerpt": "Tundra Data is an award-winning localization and data transformation company. We run one of the world’s largest Ads Rating Programs and we want you to join! As an Ads Quality Rater, you will review…",
+   "jobDescription": "<p><b>Tundra Data</b> is an award-winning localization and data transformation company. We run one of the world’s largest Ads Rating Programs and we want you to join! </p>\n<p><b>As an </b><b><i>Ads Quality Rater</i></b><b>, you will review and grade internet advertisements to help shape how ads are delivered to the end users.</b> In other words, you’ll tell the AI program how good or bad its advertisement suggestions are based on the user’s keywords.</p>\n<p>You will review ads in both <b>English </b>and <b>German</b></p>\n<p><b>This role is great for people who:</b> </p>\n<p>- Surf the internet daily </p>\n<p>- Use major search engines frequently </p>\n<p>",
+   "pubDate": "2026-10-01T04:00:35+00:00",
+   "salaryMin": 7,
+   "salaryMax": 7,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "hourly"
+  },
+  {
+   "id": 9500014,
+   "url": "https://jobicy.com/jobs/9500014-full-stack-engineer-enterprise",
+   "jobSlug": "9500014-full-stack-engineer-enterprise",
+   "jobTitle": "Full Stack Engineer (Enterprise)",
+   "companyName": "Vale Digital",
+   "companyLogo": "https://example.com/logo.png",
+   "jobIndustry": [
+    "Software Engineering"
+   ],
+   "jobType": [
+    "Full-Time"
+   ],
+   "jobGeo": "USA",
+   "jobLevel": "Senior",
+   "jobExcerpt": "Who We Are Our mission is to make the world programmable. Sight is one of the key ways we understand the world, and soon this will be true for the software we use, too. We’re building the tools,…",
+   "jobDescription": "<h3><strong>Who We Are</strong></h3>\n<p>Our mission is to make the world programmable. Sight is one of the key ways we understand the world, and soon this will be true for the software we use, too.</p>\n<p>We’re building the tools, community, and resources needed to make the world programmable with artificial intelligence. <a href=\"https://jobicy.com/company/Vale Digital\" target=\"_blank\" rel=\"noopener\">Vale Digital</a>",
+   "pubDate": "2026-10-01T04:00:18+00:00",
+   "salaryMin": 165000,
+   "salaryMax": 195000,
+   "salaryCurrency": "USD",
+   "salaryPeriod": "yearly"
+  }
+ ],
+ "statusCode": 200,
+ "success": true
+}

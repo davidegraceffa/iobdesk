@@ -1,0 +1,184 @@
+{
+ "comments": "21/08/2026: Cursor pagination is now available and is the preferred way to page through the feed. Pass the nextCursor value from each response back as ?cursor=. It is faster than offset and will never return the same job twice. The offset parameter is deprecated and will be removed in a future release. 13/03/2026: The API has been updated to include the companySlug field in the response.",
+ "updatedAt": 1790857690,
+ "offset": 20,
+ "limit": 20,
+ "totalCount": 3411,
+ "jobs": [
+  {
+   "title": "Frontend Developer (React/Typescript)",
+   "excerpt": "Company Descriptionkestrel-software is an AI-based messaging platform designed to help businesses improve customer communication through a unified inbox supporting SMS, MMS, RCS, Live Chat, and Voice.",
+   "companyName": "Kestrel Software",
+   "companySlug": "kestrel-software",
+   "companyLogo": "https://example.com/logo.png",
+   "employmentType": "Full Time",
+   "minSalary": 150000,
+   "maxSalary": 150000,
+   "salaryPeriod": "annual",
+   "seniority": [
+    "Mid-level"
+   ],
+   "currency": "USD",
+   "locationRestrictions": [
+    "United States"
+   ],
+   "timezoneRestrictions": [
+    -10,
+    -9,
+    -8,
+    -7,
+    -6,
+    -5,
+    14
+   ],
+   "categories": [
+    "Frontend-Development",
+    "React",
+    "Web-Development",
+    "UI-Engineering",
+    "Frontend-Engineer",
+    "Frontend-React-Developer",
+    "React-Frontend-Developer",
+    "UI-Frontend-Developer",
+    "Front-End-Developer",
+    "React-Frontend-Engineer",
+    "Remote-Mid-Level-Frontend-Developer-(TypeScript-NextJS)",
+    "Remote-Mid-Level-Frontend-Engineer-(Angular-TypeScript)"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<h3>Company Description</h3><p><a href=\"https://himalayas.app/companies/Kestrel Software\">Kestrel Software</a> is an AI-based messaging platform designed to help businesses improve customer communication through a unified inbox supporting SMS, MMS, RCS, Live Chat, and Voice. Over the past decade, <a href=\"https://himalayas.app/companies/Kestrel Software\">Kestrel Software</a> has grown into a reliable and profitable platform that powers customer interactions and generates revenue for organizations of all sizes. With a commitment to solving high-impact problems and delivering seamless products across desktop and mobile, <a href=\"https://himalayas.app/companies/Kestrel Software\">",
+   "pubDate": 1790095643,
+   "expiryDate": 1795279641,
+   "applicationLink": "https://himalayas.app/companies/kestrel-software/jobs/frontend-developer-react-typescript-9400000011",
+   "guid": "https://himalayas.app/companies/kestrel-software/jobs/frontend-developer-react-typescript-9400000011"
+  },
+  {
+   "title": "Senior Frontend Developer (m/w/d) React, Next.js & TypeScript",
+   "excerpt": "Senior Frontend Developer (m/w/d)React, Next. js & TypeScript HealthTech Startup in BerlinFULL-TIME | EMPLOYMENT CONTRACTLOCATION EUROPE | REMOTEWHO WE AREWe are a team of serial entrepreneurs and…",
+   "companyName": "Larch Studio",
+   "companySlug": "larch-studio",
+   "companyLogo": "https://example.com/logo.png",
+   "employmentType": "Full Time",
+   "minSalary": null,
+   "maxSalary": null,
+   "salaryPeriod": "annual",
+   "seniority": [
+    "Senior"
+   ],
+   "currency": null,
+   "locationRestrictions": [
+    "Germany"
+   ],
+   "timezoneRestrictions": [
+    1
+   ],
+   "categories": [
+    "Frontend-Development",
+    "TypeScript-Development",
+    "Web-Development",
+    "Senior-Frontend-React-Developer",
+    "Remote-Senior-Frontend-Developer-(TypeScript-NextJS)",
+    "Senior-Front-End-Developer",
+    "React",
+    "Frontend-Engineer",
+    "Health-Tech"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<h3>Senior Frontend Developer (m/w/d)</h3><p><em>React, Next.js &amp; TypeScript</em></p><h3><em>HealthTech Startup in Berlin</em></h3><p><em>FULL-TIME |</em></p><h3><em>EMPLOYMENT CONTRACT</em></h3><h3><em>LOCATION EUROPE | REMOTE</em></h3><h3><em>WHO WE ARE</em></h3><p><em>We are a team of serial entrepreneurs and investors who have joint forces to build and scale <a href=\"https://himalayas.app/companies/Larch Studio\">Larch Studio</a> (top funded but still in stealth mode). <a href=\"https://himalayas.app/companies/Larch Studio\">Larch Studio</a> is a Teleoperation Platform for Medical Technology disrupting the way how MedTech is operated:</em></p><ul>\n<li><em>",
+   "pubDate": 1788640258,
+   "expiryDate": 1791175040,
+   "applicationLink": "https://himalayas.app/companies/larch-studio/jobs/senior-frontend-developer-m-w-d-react-next-js-typescript",
+   "guid": "https://himalayas.app/companies/larch-studio/jobs/senior-frontend-developer-m-w-d-react-next-js-typescript"
+  },
+  {
+   "title": "Senior Software Engineer (Golang/TypeScript/React) - Independent Contractor",
+   "excerpt": "Senior Software Engineer (Golang/TypeScript/React) Mexico City, Mexico – Remote.",
+   "companyName": "Maple Networks",
+   "companySlug": "maple-networks",
+   "companyLogo": "https://example.com/logo.png",
+   "employmentType": "Contractor",
+   "minSalary": null,
+   "maxSalary": null,
+   "salaryPeriod": "annual",
+   "seniority": [
+    "Senior"
+   ],
+   "currency": null,
+   "locationRestrictions": [
+    "Mexico"
+   ],
+   "timezoneRestrictions": [
+    -8,
+    -7,
+    -6,
+    -5
+   ],
+   "categories": [
+    "Software-Engineer",
+    "Backend-Engineer",
+    "Frontend-Engineer",
+    "Full-Stack-Engineer",
+    "Senior-Golang-Software-Engineer",
+    "Senior-Golang-Developer",
+    "Senior-Go-Developer",
+    "Senior-Full-Stack-Engineer-(Go-Angular)",
+    "Freelance-Golang-Developer",
+    "Golang-Software-Engineer",
+    "Remote-Senior-Frontend-Developer-(TypeScript-NextJS)",
+    "Senior-Full-Stack-Engineer-(TypeScript-Angular-Node)"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<p>Senior Software Engineer (Golang/TypeScript/React)</p><p>Mexico City, Mexico – Remote. -- <em>Please note that</em><em>while this role is remote, we require team members to be based in this region for periodic in-person meet-ups.</em></p><p>We are looking for a Senior Software Engineer to join our team, responsible for working on our platform, which some of the world's biggest companies, central banks and non-governmental organisations use to build revenue and volume through data and analytics. This is an opportunity to influence technical direction, elevate engineering standards and deliver features that make a meaningful difference to our clients.</p><h3>",
+   "pubDate": 1790484600,
+   "expiryDate": 1795668598,
+   "applicationLink": "https://himalayas.app/companies/maple-networks/jobs/senior-software-engineer-golang-typescript-react-independent-contractor",
+   "guid": "https://himalayas.app/companies/maple-networks/jobs/senior-software-engineer-golang-typescript-react-independent-contractor"
+  },
+  {
+   "title": "Full-Stack Developer (Backend-Heavy, TypeScript)",
+   "excerpt": "Full-Stack Developer (Backend-Heavy, TypeScript / Convex)Location: Addis Abbaba, working remote Position Type: Full-Time Compensation: $9/hour Job OverviewWe are looking for a backend-focused…",
+   "companyName": "Nimbus Systems",
+   "companySlug": "nimbus-systems",
+   "companyLogo": "https://example.com/logo.png",
+   "employmentType": "Full Time",
+   "minSalary": null,
+   "maxSalary": null,
+   "salaryPeriod": "hourly",
+   "seniority": [
+    "Mid-level"
+   ],
+   "currency": "USD",
+   "locationRestrictions": [
+    "Ethiopia"
+   ],
+   "timezoneRestrictions": [
+    3
+   ],
+   "categories": [
+    "Fullstack-Development",
+    "Backend-Development",
+    "Typescript-Developer",
+    "Convex-Developer",
+    "React-Native-Developer",
+    "Full-Stack-Developer-(PHP-TypeScript)",
+    "Full-Stack-JavaScript-Developer",
+    "Full-Stack-Developer",
+    "Developer"
+   ],
+   "parentCategories": [
+    "Developer"
+   ],
+   "description": "<h3><strong>Full-Stack Developer (Backend-Heavy, TypeScript / Convex)</strong></h3><p><strong>Location:</strong> Addis Abbaba, working remote</p><p><strong>Position Type:</strong> Full-Time</p><p><strong>Compensation:</strong> $9/hour</p><h3><strong>Job Overview</strong></h3><p>We are looking for a <strong>backend-focused Full-Stack Developer</strong> to become a core technical builder on our team.</p><p>Your primary responsibility will be building and scaling our backend systems using <strong>TypeScript in Convex</strong>",
+   "pubDate": 1788463740,
+   "expiryDate": 1793647740,
+   "applicationLink": "https://himalayas.app/companies/nimbus-systems/jobs/full-stack-developer-backend-heavy-typescript",
+   "guid": "https://himalayas.app/companies/nimbus-systems/jobs/full-stack-developer-backend-heavy-typescript"
+  }
+ ]
+}

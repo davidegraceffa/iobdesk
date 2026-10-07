@@ -1,0 +1,20 @@
+{
+  "name": "@jobagg/shared",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Schemi Zod, tipi, modulo geo, dizionario tecnologie e parser retribuzioni condivisi tra API e web",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

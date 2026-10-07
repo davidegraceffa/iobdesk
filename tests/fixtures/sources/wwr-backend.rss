@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss">
+  <channel>
+    <title>We Work Remotely: Back-End Programming Jobs</title>
+    <link>https://weworkremotely.com/categories/remote-back-end-programming-jobs.rss</link>
+    <description>We Work Remotely: Back-End Programming Jobs</description>
+    <language>en-US</language>
+    <ttl>60</ttl>
+    <item>
+      <media:content url="https://example.com/logo.png" type="image/png"/>
+      <title>Willow Software: Senior Java Developer</title>
+      <region>Anywhere in the World</region>
+      <country>🇦🇩 Andorra, 🇦🇱 Albania, 🇦🇹 Austria, 🇧🇦 Bosnia and Herzegovina, 🇧🇬 Bulgaria, 🇨🇭 Switzerland, 🇨🇿 Czechia, 🇩🇪 Germany, 🇩🇰 Denmark, 🇪🇪 Estonia, 🇪🇸 Spain, 🇫🇮 Finland, 🇫🇷 France, 🇬🇧 United Kingdom of Great Britain and Northern Ireland, 🇬🇷 Greece, 🇭🇷 Croatia, 🇭🇺 Hungary, 🇮🇹 Italy, 🇱🇹 Lithuania, 🇲🇩 Moldova (Republic of), 🇲🇪 Montenegro, 🇲🇰 North Macedonia, 🇳🇱 Netherlands, 🇳🇴 Norway, 🇵🇱 Poland, 🇵🇹 Portugal, 🇷🇴 Romania, 🇸🇪 Sweden, 🇸🇮 Slovenia, 🇸🇰 Slovakia, and 🇺🇦 Ukraine</country>
+      <state>Région Flamande</state>
+      <skills>Java, PostgreSQL, and Spring</skills>
+      <category>Back-End Programming</category>
+      <type>Full-Time</type>
+      <description>&lt;img src="https://example.com/logo.png" /&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Ghent - Belgium
+    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="https://example.com/jobs"&gt;https://example.com/jobs&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Are you a driven back-end developer who doesn't wait for instructions, but is already thinking two steps ahead? Who experiments with new technologies and smart solutions alongside the job? Then we want to talk to you.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Straight forward but clear: Willow Software isn't looking for someone to just execute. We're looking for someone who thinks, does and keeps going when the going gets tough.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;</description>
+      <pubDate>Thu, 17 Sep 2026 10:51:23 +0000</pubDate>
+      <expires_at>Sat, 17 Oct 2026 10:51:23 +0000</expires_at>
+      <guid>https://weworkremotely.com/remote-jobs/Willow Software-senior-java-developer</guid>
+      <link>https://weworkremotely.com/remote-jobs/Willow Software-senior-java-developer</link>
+    </item>
+    <item>
+      <title>Yarrow Studio: Senior Backend Developer (Node.js / Nest.js)</title>
+      <region>Anywhere in the World</region>
+      <country></country>
+      <state>Stockholm</state>
+      <skills>Node.js, Back-End Dev, and Nest.js</skills>
+      <category>Back-End Programming</category>
+      <type>Full-Time</type>
+      <description>
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Sweden
+    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="https://example.com"&gt;https://example.com&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;&lt;strong&gt;The Role:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;We are looking for a Senior Backend (Node.js / Nest.js) Developer to join our fast-growing network. You’ll be responsible for building modern and scalable web applications, working closely with backend developers and designers to create intuitive user experiences.&lt;/p&gt;
+&lt;p&gt;This is a long-term, full-time remote role with opportunities to work on innovative projects that make a difference.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4&gt;&lt;strong&gt;What we’re looking for:&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;</description>
+      <pubDate>Tue, 15 Sep 2026 09:06:31 +0000</pubDate>
+      <expires_at>Thu, 15 Oct 2026 09:06:31 +0000</expires_at>
+      <guid>https://weworkremotely.com/remote-jobs/Yarrow Studio-ab-senior-backend-developer-node-js-nest-js-3</guid>
+      <link>https://weworkremotely.com/remote-jobs/Yarrow Studio-ab-senior-backend-developer-node-js-nest-js-3</link>
+    </item>
+    <item>
+      <title>Yarrow Studio: Senior Backend Developer (Python)</title>
+      <region>Anywhere in the World</region>
+      <country></country>
+      <state>Stockholm</state>
+      <skills>Django and Python</skills>
+      <category>Back-End Programming</category>
+      <type>Full-Time</type>
+      <description>
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Sweden
+    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="https://example.com"&gt;https://example.com&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;&lt;strong&gt;The Role:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;We are looking for a Senior Python Developer for one of our clients. You are a perfect candidate if you are growth-oriented, you love what you do, and you enjoy working on new ideas to develop exciting products.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;h4&gt;&lt;strong&gt;What we are looking for:&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;5+ years of experience building products with Python and Django.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;High proficiency in SQL with experience using databases like PostgreSQL.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;</description>
+      <pubDate>Tue, 15 Sep 2026 09:01:36 +0000</pubDate>
+      <expires_at>Thu, 15 Oct 2026 09:01:36 +0000</expires_at>
+      <guid>https://weworkremotely.com/remote-jobs/Yarrow Studio-ab-senior-backend-developer-python-10</guid>
+      <link>https://weworkremotely.com/remote-jobs/Yarrow Studio-ab-senior-backend-developer-python-10</link>
+    </item>
+    <item>
+      <title>Reed Studio: Backend Engineer, IAM</title>
+      <region>Anywhere in the World</region>
+      <country></country>
+      <state></state>
+      <skills></skills>
+      <category>Back-End Programming</category>
+      <type>Full-Time</type>
+      <description>
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - United States
+&lt;/p&gt;
+
+&lt;div class="content-intro"&gt;&lt;div class="c-message_kit__blocks c-message_kit__blocks--rich_text"&gt;
+&lt;div class="c-message__message_blocks c-message__message_blocks--rich_text"&gt;
+&lt;div class="p-block_kit_renderer"&gt;
+&lt;div class="p-block_kit_renderer__block_wrapper p-block_kit_renderer__block_wrapper--first"&gt;
+&lt;div class="p-rich_text_block"&gt;
+&lt;div class="p-rich_text_section"&gt;</description>
+      <pubDate>Mon, 14 Sep 2026 07:31:07 +0000</pubDate>
+      <expires_at>Wed, 14 Oct 2026 07:31:07 +0000</expires_at>
+      <guid>https://weworkremotely.com/remote-jobs/Reed Studio-backend-engineer-iam</guid>
+      <link>https://weworkremotely.com/remote-jobs/Reed Studio-backend-engineer-iam</link>
+    </item>
+    <item>
+      <title>Zephyr Networks: Senior PeopleSoft Developer/Analyst II</title>
+      <region>Anywhere in the World</region>
+      <country></country>
+      <state>Connecticut</state>
+      <skills></skills>
+      <category>Back-End Programming</category>
+      <type>Full-Time</type>
+      <description>
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Zephyr, New Jersey, United States
+    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="https://example.com/WAQm2XC7Qr2yLU5m7H7yeG"&gt;https://example.com/WAQm2XC7Qr2yLU5m7H7yeG&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Job Type&lt;/strong&gt;&amp;nbsp;Full-Time&lt;br&gt;&lt;br&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;</description>
+      <pubDate>Thu, 03 Sep 2026 13:24:14 +0000</pubDate>
+      <expires_at>Sat, 03 Oct 2026 13:24:14 +0000</expires_at>
+      <guid>https://weworkremotely.com/remote-jobs/zephyr-networks-senior-peoplesoft-developer-analyst-ii</guid>
+      <link>https://weworkremotely.com/remote-jobs/zephyr-networks-senior-peoplesoft-developer-analyst-ii</link>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,721 @@
+{
+ "exhaustive": {
+  "nbHits": true,
+  "typo": true
+ },
+ "exhaustiveNbHits": true,
+ "exhaustiveTypo": true,
+ "hits": [
+  {
+   "_tags": [
+    "comment",
+    "author_user1",
+    "story_90000001"
+   ],
+   "author": "user1",
+   "children": [
+    90002844
+   ],
+   "comment_text": "At Birch Works (<a href=\"https:&#x2F;&#x2F;example.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;</a>) we&#x27;re hiring! We envision a world where technology enables financial freedom, educational empowerment, energy sustainability, and data sovereignty.\nAll of our roles are fully remote, worldwide. Apply now:<p>- Technical Lead (GPU Infrastructure): <a href=\"https:&#x2F;&#x2F;example.com&#x2F;o&#x2F;technical-lead-gpu-infrastructure-pakistan\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;o&#x2F;technical-lead-gpu-infrastructur...</a><p>- DevOps Engineer (QVAC): <a href=\"https:&#x2F;&#x2F;example.com&#x2F;o&#x2F;devops-engineer-100-remote-17\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;o&#x2F;devops-engineer-100-remote-17...</a><p>- Software Architect (Tokenization): <a href=\"https:&#x2F;&#x2F;example.com&#x2F;o&#x2F;senior-software-architect-100-remote-worldwide-10\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;o&#x2F;senior-software-architect-100-re...</a><p>",
+   "created_at": "2026-09-15T14:51:19Z",
+   "created_at_i": 1789483879,
+   "objectID": "90000258",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-19T21:20:24Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user2",
+    "story_90000001"
+   ],
+   "author": "user2",
+   "comment_text": "Moss Systems (YC S26) | Founding Software Engineer | On-site (hybrid) in Stockholm, Sweden | Full time<p>Moss Systems is building the world&#x27;s first Agentic Operating System for e-commerce logistics. Our vision is to create the AI e-commerce employee of the future. We are forming our core team in Stockholm and are looking for exceptional engineers. We are backed by some of the most some of the most prominent investors in the world. In less than a year, we have seen massive growth where we can&#x27;t keep up with the demand and need engineers to bring the product faster to the market.<p>You are a good fit if:<p>* You are comfortable maintaining, expanding and operating an B2B SaaS platform with a high sense of ownership.<p>* You have previous experience working at a SaaS product company as a founding or senior engineer<p>",
+   "created_at": "2026-09-15T12:09:09Z",
+   "created_at_i": 1789474149,
+   "objectID": "90000045",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-16T20:00:47Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user3",
+    "story_90000001"
+   ],
+   "author": "user3",
+   "children": [
+    90002845
+   ],
+   "comment_text": "Location: Remote<p>Remote: Yes<p>Willing to relocate: No<p>Technologies: TypeScript, Node.js, React, PostgreSQL<p>Résumé&#x2F;CV: on request<p>Email: jobs@example.com",
+   "created_at": "2026-09-13T17:56:12Z",
+   "created_at_i": 1789322172,
+   "objectID": "90000047",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-20T10:41:54Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user4",
+    "story_90000001"
+   ],
+   "author": "user4",
+   "comment_text": "Nectar Works | Robotics &#x2F; Hardware Engineer | San Francisco, CA | ONSITE | Full-time | $130k–200k + equity | <a href=\"https:&#x2F;&#x2F;example.com\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com</a><p>I&#x27;m Daniel, co-founder. Nectar Works is building the cognitive layer for physical AI. Nearly every major robotics effort today teaches machines by showing them thousands of hours of human teleoperation. We think that paradigm has a ceiling, and we&#x27;re working on nature-inspired architectures for unstructured environments (construction sites, mining, pipelines, battlefield). Pre-seed, backed by top VC funds and operators from robotics&#x2F;AI companies.<p>",
+   "created_at": "2026-09-12T01:29:24Z",
+   "created_at_i": 1789176564,
+   "objectID": "90000084",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-12T11:31:20Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user5",
+    "story_90000001"
+   ],
+   "author": "user5",
+   "children": [
+    90002846
+   ],
+   "comment_text": "Opal Digital | Full-Stack Engineer | REMOTE (US time zones) | Contract or Full-time | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;jobs&#x2F;full-stack-engineer\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;jobs&#x2F;full-stack-engineer</a><p>A hedge fund analyst covering therapeutics has to watch hundreds of companies at once: press releases, SEC filings, management calls, updates on government sites, clinical data publications. Opal Digital ingests all of it and surface what matters. Hedge funds pay for it today.<p>We are early and the team is small, so you would own entire surfaces of the product rather than pick up tickets:<p>- Ship full-stack features end to end, from the data model to the interface.<p>- Build the ingestion and enrichment pipelines that turn raw data into rich insights and alerts.<p>- Work on AI-backed features, from ideation to serving them in the webapp and over MCP.<p>",
+   "created_at": "2026-09-11T16:57:55Z",
+   "created_at_i": 1789145875,
+   "objectID": "90000164",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-15T20:52:41Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user6",
+    "story_90000001"
+   ],
+   "author": "user6",
+   "children": [
+    90002847,
+    90002848
+   ],
+   "comment_text": "Amber Studio | Agent Builder | Remote (US ET Overlap) | Full-time &#x2F; Part-time &#x2F; Contract | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;careers\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;careers</a><p>AI transformation firm shipping production AI systems for mid-market enterprises in regulated and technical domains — finance, energy, industrials, healthcare. We do not stop at PowerPoint AI strategy. We ship working systems alongside our clients&#x27; engineering teams. Small teams, deep expertise, real autonomy on real work.<p>",
+   "created_at": "2026-09-10T22:15:25Z",
+   "created_at_i": 1789078525,
+   "objectID": "90000055",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-19T07:29:50Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user7",
+    "story_90000001"
+   ],
+   "author": "user7",
+   "comment_text": "Birch Networks (Sequoia-backed, Series B) | Senior Member of Technical Staff | On-Site (New York, NY) | Full Time | $230,000–$300,000 + equity<p>Company: Birch Networks builds AI for healthcare administration. Health plans review clinical evidence against medical policy before care gets approved, often relying on nurses reading PDFs. Our platform reads policies and clinical records, producing decisions clinicians can audit. We&#x27;re ~45 people in New York and recently raised $40M, bringing us to $64M total, from Sequoia, NEA, Neo, FPV, Kinnevik, and founders of DeepMind, Google AI, and Inflection.<p>Role: Members of Technical Staff handle everything from system design to production: designing backend services, scaling AWS, debugging, scoping integrations, or evaluating LLM-powered systems. You&#x27;ll set technical direction and mentor engineers.<p>",
+   "created_at": "2026-09-10T20:50:48Z",
+   "created_at_i": 1789073448,
+   "objectID": "90000082",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-10T20:54:26Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user8",
+    "story_90000001"
+   ],
+   "author": "user8",
+   "comment_text": "Cedar Systems (<a href=\"https:&#x2F;&#x2F;example.com\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com</a>) | Software Engineers | Full-time | Onsite | Hawthorne, CA (Los Angeles County)<p>Cedar Systems builds AI-native manufacturing systems that unify software, hardware, and physics to produce industrial-scale parts at the speed of human ideation. By treating manufacturing as a single integrated system, we unlock a new era of innovation where complex hardware is designed, built, and scaled without limits. This isn’t just an improvement; it’s a leap forward in how complex metal parts are made, with the ability to revolutionize industries like aerospace, defense, automotive, energy, and beyond. We are backed by top VCs including NVIDIA’s NVentures, Founders Fund, Threshold Ventures, and Apandion.<p>",
+   "created_at": "2026-09-09T22:23:09Z",
+   "created_at_i": 1788992589,
+   "objectID": "90000261",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-09T22:26:53Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user9",
+    "story_90000001"
+   ],
+   "author": "user9",
+   "comment_text": "Dune Works | Senior Software Engineer, Software Engineer, Senior AI Researcher, AI Researcher | Cambridge, MA, Bethesda, MD | ONSITE (US, hybrid) | Full-time | www.Dune example.com&#x2F;careers<p>Dune Works is a fast-growing Artificial Intelligence (AI) company that specializes in the application of machine learning models for data harmonization and curation. We apply these technologies within the biopharma and life sciences domains, and are increasingly expanding the domains and applications we can apply them to.<p>We are hiring across several positions - from entry level to senior - to support the development and deployment of technology for our biopharma and life sciences customers focusing on:<p>- Data harmonization and curation \n- Machine learning and predictive modeling<p>",
+   "created_at": "2026-09-09T15:16:55Z",
+   "created_at_i": 1788967015,
+   "objectID": "90000085",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-15T00:43:25Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user10",
+    "story_90000001"
+   ],
+   "author": "user10",
+   "comment_text": "Ember Digital | London, UK | Full-Time | ONSITE+PART REMOTE | <a href=\"https:&#x2F;&#x2F;example.com\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com</a><p>What sucked the last time you rented a house or flat? Come and fix it.\nEmber Digital is force for good in an industry tarnished by rip-off agencies and one of the biggest UK websites by traffic. Enabled by an unrelenting focus on technology, we let more properties than any agency in the UK. In the last 12m we let over £50 billion worth of property, to over 8 million registered users, without ever charging any admin fees.<p>You&#x27;ll be working on solving every aspect of the rental journey, from models to predict the right price of a property, to building the future of property management, all to help tenants find their dream home, and landlords their ideal tenant.<p>",
+   "created_at": "2026-09-09T13:42:33Z",
+   "created_at_i": 1788961353,
+   "objectID": "90000069",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-16T23:27:58Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user11",
+    "story_90000001"
+   ],
+   "author": "user11",
+   "comment_text": "Location: Remote<p>Remote: Yes<p>Willing to relocate: No<p>Technologies: TypeScript, Node.js, React, PostgreSQL<p>Résumé&#x2F;CV: on request<p>Email: jobs@example.com",
+   "created_at": "2026-09-09T12:27:50Z",
+   "created_at_i": 1788956870,
+   "objectID": "90000245",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-09T20:13:55Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user12",
+    "story_90000001"
+   ],
+   "author": "user12",
+   "comment_text": "Remote (US) Cedar Digital (<a href=\"https:&#x2F;&#x2F;example.com\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com</a>) | Senior&#x2F;Staff Backend Engineer, Backend Platform | Full-time<p>We&#x27;re bootstrapped, profitable, and 130 people, all remote, building an AI-powered CRM. We&#x27;re spinning up a new Backend Platforms team and you&#x27;d be one of the first hires — unusual influence over what it owns.<p>You&#x27;d build for other engineers: the paved-road patterns under our Python&#x2F;Flask API layer (REST + GraphQL, auth, permissions, migrations), the Flask→FastAPI path, production observability standards, and our AI dev platform — DevDawg (cloud dev environments for the whole stack) and Spice (our agent layer that already auto-approves simple PRs). Making Spice safe across more of our review surface is the team&#x27;s biggest project.<p>",
+   "created_at": "2026-09-08T19:49:58Z",
+   "created_at_i": 1788896998,
+   "objectID": "90000032",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-14T16:42:39Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user13",
+    "story_90000001"
+   ],
+   "author": "user13",
+   "children": [
+    90002849,
+    90002850
+   ],
+   "comment_text": "Glade Studio | REMOTE ALMOST ANYWHERE IN THE WORLD| Hiring principal and distinguished engineers to build net new products | up to ~ $750k\nHiring: exceptional consumer product engineers at Glade Studio.<p>We&#x27;re a consumer fintech with 25M+ users who trust us to budget, save, invest, and bank in one place. Profitable for 4+ years. And as of today, our average employee tenure is 3.6 years, a number you almost never see in startup tech, and one we&#x27;re quietly proud of. People stay because the work is good, the people are sharp, and we&#x27;ve built something worth staying for.<p>Now we&#x27;re building net-new consumer products from zero, and we&#x27;re looking for people who love to tinker and build stuff to ship them with us.<p>",
+   "created_at": "2026-09-08T19:19:18Z",
+   "created_at_i": 1788895158,
+   "objectID": "90000230",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-13T19:26:03Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user14",
+    "story_90000001"
+   ],
+   "author": "user14",
+   "comment_text": "Harbor Networks | Founding Applied AI Engineer | San Francisco, CA | Onsite (4x&#x2F;week) | $200-260K | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;</a><p>Looking for opportunities to develop an AI-powered product with a practical impact? Look no further.<p>Harbor Networks is building the AI-native ERP for industrial distribution and the hard goods supply chain. In other words, we&#x27;re making it much, MUCH easier for materials manufacturers and distributors to access information about their products, answer questions with confidence, and speed up time to sale.<p>We&#x27;ve only been in operation for ~a year, and a couple of early design partners have asked to invest. Now, we&#x27;re in the process of hiring a specialized Engineer to help us take our MVP to the next level.<p>Interested in doing more than riding the AI hype train? Shoot me an email at jobs@example.com.",
+   "created_at": "2026-09-08T17:34:44Z",
+   "created_at_i": 1788888884,
+   "objectID": "90000252",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T17:36:48Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user15",
+    "story_90000001"
+   ],
+   "author": "user15",
+   "comment_text": "Iris Systems | US-Based &#x2F; Remote | Full-time – <a href=\"https:&#x2F;&#x2F;example.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;</a><p>Iris Systems is a VC-backed, post–Series A startup powering right-time data replication and transform — from sub-second CDC replication to terabyte-scale OLAP data flows. We&#x27;re open-source, developer-first, and focused on making data movement radically simpler across both our Platform and Applications layers.<p>We&#x27;re hiring for:<p>Head of Engineering — Own the engineering function end-to-end as a partner to our founder CTO: strategy, people, delivery, and operations across a compact but high-leverage team. You&#x27;ll grow the leaders already running our teams, set technical strategy jointly with the CTO, and be accountable for what engineering ships and what it costs.<p>",
+   "created_at": "2026-09-08T17:15:38Z",
+   "created_at_i": 1788887738,
+   "objectID": "90000273",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T17:21:03Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user16",
+    "story_90000001"
+   ],
+   "author": "user16",
+   "comment_text": "Juniper Works|Senior Performance Engineer|FT| Remote USA | 172-195<p>I&#x27;m on the recruitment team at Juniper Works, a health tech company that uses data to make healthcare pricing more transparent for all.<p>We&#x27;re looking for an experienced engineer who has experience working with large datasets to improve the performance of product applications for end users.<p>If interested apply here:<a href=\"https:&#x2F;&#x2F;example.com&#x2F;Juniper Works-health&#x2F;fdcd9752-b372-467c-aec1-1419edee2c87\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;Juniper Works-health&#x2F;fdcd9752-b372-467c...</a>",
+   "created_at": "2026-09-08T16:21:06Z",
+   "created_at_i": 1788884466,
+   "objectID": "90000183",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T16:23:18Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user17",
+    "story_90000001"
+   ],
+   "author": "user17",
+   "comment_text": "Kestrel Digital | Founding Geometry Engineer | Full-time | Onsite (London, UK) | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;</a><p>I&#x27;m Gio, CTO at Kestrel Digital. We&#x27;re building task-specific robots that make automation more accessible to small and medium manufacturers. We&#x27;re looking for a Founding Geometry Software Engineer to build our 3D CAD analysis engine, handling grasp planning, and generative design of parts using a combination of meshes, SDFs, NURBS, and point clouds.<p>You will enjoy this role if you are excited to build algorithms that control physical hardware in the real world, and have experience with computational geometry libraries or game engine internals. Apply directly at our website.",
+   "created_at": "2026-09-08T14:44:08Z",
+   "created_at_i": 1788878648,
+   "objectID": "90000133",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T14:49:02Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user18",
+    "story_90000001"
+   ],
+   "author": "user18",
+   "children": [
+    90002851
+   ],
+   "comment_text": "We’re hiring at Dune Software — now part of Ember Studio.<p>We are looking for a Product Manager, Product &amp; Backend Engineers, Product Marketing Manager and Developer Relations Engineers to join us in building the most widely adopted open-source LLM engineering platform.<p>- Berlin or EU hybrid (Engineering roles) &#x2F; US-fully remote (Product &amp; Marketing roles)<p>- ~1 week onsite in Berlin every 2 months — travel covered<p>- Full-time<p>- €90–160k + Ember Studio equity<p>Hi, I’m Max, CTO and co-founder. Dune Software is focused on AI&#x2F;LLM observability, with a lot of interesting challenges ahead, from AI data and developer experience to scaling systems for production workloads.<p>",
+   "created_at": "2026-09-08T12:22:15Z",
+   "created_at_i": 1788870135,
+   "objectID": "90000143",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T17:09:32Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user19",
+    "story_90000001"
+   ],
+   "author": "user19",
+   "comment_text": "Larch Software | Forward Deployed Engineer, Site Reliability Engineer | London, UK | HYBRID | Full-Time | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;</a><p>Larch Software is an early-stage health-tech startup enabling healthcare providers to select, test, deploy, and monitor third-party AI applications as part of routine care pathways. Our enterprise AI platform allows hospitals to safely and effectively adopt AI technologies at scale.<p>We are looking for adventurous builders to join us in two key roles to help bridge our platform and the hospital frontline:<p>",
+   "created_at": "2026-09-08T10:30:06Z",
+   "created_at_i": 1788863406,
+   "objectID": "90000193",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T10:32:01Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user20",
+    "story_90000001"
+   ],
+   "author": "user20",
+   "children": [
+    90002852
+   ],
+   "comment_text": "Maple Studio | Software Engineer | Full-Time | REMOTE (US) | $180,000 - $250,000 USD<p>We’re a growing Maple Studio building modern software tools for remote teams. Looking for software engineers with 4+ years of experience to join our product team and help ship features that customers use every day.<p>If you’re interested, send your resume to jobs@example.com",
+   "created_at": "2026-09-07T18:54:30Z",
+   "created_at_i": 1788807270,
+   "objectID": "90000214",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T02:47:15Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user21",
+    "story_90000001"
+   ],
+   "author": "user21",
+   "children": [
+    90002853
+   ],
+   "comment_text": "Software Engineer — Remote (US Only)<p>Experience: 5+ years<p>Location: United States only<p>Work Type: Remote<p>Compensation: $90,000–$110,000&#x2F;year<p>Employment: Full-time<p>We’re looking for an experienced Software Engineer with 5+ years of professional experience to join our team in a fully remote role.<p>Requirements<p>* 5+ years of professional software engineering experience<p>* Strong problem-solving and communication skills<p>* Experience developing, testing, and maintaining production software<p>* Ability to work independently in a remote environment<p>Location Requirement: Applicants must currently be based in the United States.<p>Interested candidates can apply at jobs@example.com",
+   "created_at": "2026-09-07T14:21:29Z",
+   "created_at_i": 1788790889,
+   "objectID": "90000202",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-07T18:26:18Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user22",
+    "story_90000001"
+   ],
+   "author": "user22",
+   "children": [
+    90002854,
+    90002855,
+    90002856
+   ],
+   "comment_text": "Nimbus Networks | CTO Partner | REMOTE (worldwide) | Full-time | Istanbul-based company | <a href=\"https:&#x2F;&#x2F;example.com\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com</a><p>Nimbus Networks is an AI strategic-planning product for owner-operators of small and medium businesses. The boss describes an idea that has been stuck for years; a research-and-question session returns an implementation-ready plan. In production since June, hand-onboarding our first paying customers since August, invitation-only.<p>",
+   "created_at": "2026-09-07T13:13:20Z",
+   "created_at_i": 1788786800,
+   "objectID": "90000263",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-19T12:39:06Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user23",
+    "story_90000001"
+   ],
+   "author": "user23",
+   "children": [
+    90002857,
+    90002858
+   ],
+   "comment_text": "Onyx Systems | Director of Corp Dev · Product Marketing Associate · MLOps Engineer | Remote (NYC &#x2F; SEA &#x2F; global overlap) | $140K–$200K + meaningful equity<p>Distribution is one of the last durable moats left; models are commoditizing, but knowing how attention and demand actually move through a system still compounds. That&#x27;s what we&#x27;re building: a growth control plane that turns distribution into something you can model and act on with certainty. Get this right and the outcome isn&#x27;t in question.<p>We&#x27;re hiring across three roles:<p>Director, Corporate Development: own strategic partnerships, fundraising support, and M&amp;A&#x2F;inorganic growth. For someone who can operate at the intersection of deal-making and narrative, and help steer where this company goes next.<p>",
+   "created_at": "2026-09-07T08:19:00Z",
+   "created_at_i": 1788769140,
+   "objectID": "90000070",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-11T15:37:28Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user24",
+    "story_90000001"
+   ],
+   "author": "user24",
+   "comment_text": "Pine Works | Software Engineer (Autonomy, Perception, Frontend) | REMOTE (US) | Contract | U.S. Citizens | <a href=\"https:&#x2F;&#x2F;example.com\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com</a><p>Pine Works is a DoD prime contractor. We&#x27;re building an airborne system for a manned counter-drone aircraft (that we operate) to enable a crew to find and engage Group 2-3 drones at low cost. Hiring contract software engineers for three roles:<p>- Software Engineer, Autonomy<p>- Software Engineer, Perception<p>- Software Engineer, Frontend (HMI)<p>We’re a small team (for now) so this isn’t your traditional defense program. Bureaucracy kept to the absolute minimum. If you can work across more than one of these domains that’s a huge plus.<p>",
+   "created_at": "2026-09-05T17:40:02Z",
+   "created_at_i": 1788630002,
+   "objectID": "90000096",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-05T17:43:40Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user25",
+    "story_90000001"
+   ],
+   "author": "user25",
+   "comment_text": "Quartz Digital (YC W22) | Staff, Fullstack &amp; Frontend Software Engineers | New York, NY | ONSITE | Full-time | <a href=\"https:&#x2F;&#x2F;example.com\">https:&#x2F;&#x2F;example.com</a>\nQuartz Digital’s mission is to streamline and simplify construction permitting in the $1.6 trillion United States construction market. Our software reduces time to permit, supporting permitting end-to-end including permit research, application preparation, submission, and monitoring.<p>We recently raised a $54M Series B led by Accel with participation from Kleiner Perkins, Felicis, Altos Ventures, and YC.<p>",
+   "created_at": "2026-09-05T12:47:58Z",
+   "created_at_i": 1788612478,
+   "objectID": "90000080",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-05T12:49:37Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user26",
+    "story_90000001"
+   ],
+   "author": "user26",
+   "children": [
+    90002859
+   ],
+   "comment_text": "Reed Software | Cloud &#x2F; Platform Engineer | REMOTE (SF Bay Area, CA, US · Bengaluru, KA, India) | Full-time | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;careers&#x2F;cloud-platform-engineer&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;careers&#x2F;cloud-platform-engineer&#x2F;</a><p>We generate full-stack apps and deploy them — a generated app becomes a live URL, on our infrastructure or in the customer&#x27;s own AWS or GCP account. It&#x27;s in production and it has more shell script in it than it should. You&#x27;d own it, and the mandate is to make it boring. Kubernetes, GCP and AWS deploy paths, CI&#x2F;CD, observability, cost, tenant boundary.<p>No on-call rotation today — it&#x27;s the founders and whoever last touched it. Building a real one is part of the job, not something you inherit alone.<p>",
+   "created_at": "2026-09-05T06:55:49Z",
+   "created_at_i": 1788591349,
+   "objectID": "90000073",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-10T03:45:06Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user27",
+    "story_90000001"
+   ],
+   "author": "user27",
+   "children": [
+    90002860
+   ],
+   "comment_text": "Slate Studio | ML Engineer | REMOTE (WORLDWIDE) | Full-time<p>Small private investment firm trading its own capital. One junior ML engineer to work directly with our senior technical lead on an AI system for our own trading. No finance background needed — we hire on fundamentals and side projects you actually shipped. Apply at <a href=\"https:&#x2F;&#x2F;example.com&#x2F;slate-studio&#x2F;2c12339b-d302-427c-9a73-d825b4b942b0\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;slate-studio&#x2F;2c12339b-d302-427c...</a>",
+   "created_at": "2026-09-04T23:12:32Z",
+   "created_at_i": 1788563552,
+   "objectID": "90000072",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-08T10:47:32Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user28",
+    "story_90000001"
+   ],
+   "author": "user28",
+   "children": [
+    90002861,
+    90002862,
+    90002863
+   ],
+   "comment_text": "Tundra Networks|<a href=\"https:&#x2F;&#x2F;example.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;</a>| VoiceAI | webRTC | Remote | Full Time<p>Tundra Networks is building the infrastructure layer for the voice-driven era of computing. Our platform gives developers everything they need to build, test, deploy, scale, and observe agents in production. Hiring:<p>&gt;&gt; Product Engineer | NAMER, EMEA, APJ (Remote) or SF (Hybrid): \n<a href=\"https:&#x2F;&#x2F;example.com&#x2F;Tundra Networks&#x2F;463e2769-bb85-4429-96a3-3a175eb228cd\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;Tundra Networks&#x2F;463e2769-bb85-4429-96a3-3a1...</a><p>&gt;&gt; Staff Security Engineer | NAMER, EMEA, APJ (Remote): \n<a href=\"https:&#x2F;&#x2F;example.com&#x2F;Tundra Networks&#x2F;efc06ff8-37c4-473e-8de8-bbba56cf0479\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;Tundra Networks&#x2F;efc06ff8-37c4-473e-8de8-bbb...</a><p>",
+   "created_at": "2026-09-04T20:56:16Z",
+   "created_at_i": 1788555376,
+   "objectID": "90000175",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-18T04:11:17Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user29",
+    "story_90000001"
+   ],
+   "author": "user29",
+   "comment_text": "Umber Systems | Engineering Lead | Hybrid NYC | full time | 150k-250k<p>We&#x27;re a mission-oriented org focused on bridging the global digital divide. Key to our strategy is our community game-making program: guiding learners to move from playing games to creating them. We&#x27;re hiring a tech lead for our learner community platform.<p>Stack: Node.js, Nuxt&#x2F;Vue, Apollo, GraphQL. 8+ years experience; open-source&#x2F;community&#x2F;edtech background desirable.<p><a href=\"https:&#x2F;&#x2F;example.com&#x2F;careers&#x2F;33\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;careers&#x2F;33</a><p>This is a true tech lead job: making calls about implementation, holding the standard, owning the shared delivery plan. You&#x27;ll partner with a product lead on strategy, and with an engineering manager for roadmapping &amp; delivery. You will also work hands-on in the codebase. We&#x27;re a small team (about 40) and everyone is hands-on.<p>",
+   "created_at": "2026-09-04T17:20:02Z",
+   "created_at_i": 1788542402,
+   "objectID": "90000078",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-04T17:24:52Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user30",
+    "story_90000001"
+   ],
+   "author": "user30",
+   "comment_text": "Vale Works | Senior &amp; Junior Software Engineers | Hybrid in Oxford, UK | full-time | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;</a><p>We’re hiring multiple passionate software developers to help build innovative solutions that power the future of energy. We have roles for every experience level. Work alongside exceptional colleagues to create cutting-edge software and shape the energy landscape! Learn more and apply here:<p>Senior Software Engineer: <a href=\"https:&#x2F;&#x2F;example.com&#x2F;postings&#x2F;91347816-7029-442f-9dbc-93684ded5324\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;postings&#x2F;91347816-7029-442f-9db...</a><p>Software Engineer: <a href=\"https:&#x2F;&#x2F;example.com&#x2F;postings&#x2F;8c289ab6-283b-4270-a3e9-db9f928e835b\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;postings&#x2F;8c289ab6-283b-4270-a3e...</a>",
+   "created_at": "2026-09-04T13:39:24Z",
+   "created_at_i": 1788529164,
+   "objectID": "90000142",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-04T13:44:36Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user31",
+    "story_90000001"
+   ],
+   "author": "user31",
+   "comment_text": "Willow Digital | Technical Trainer | REMOTE (USA, East Coast based) | Full-time | 85k-105k USD<p>Key requirements: Up to 50% time can be mandatory travel for on-site in-person training sessions, very variable across the year. But no requirement to work in the office. Corollary to that - fluent or very good spoken English level is required. (PS: in actual practice it&#x27;s about 1-2 work weeks every 2 months or so, irregularly)<p>Willow Digital is a telecom hardware vendor. We are making hardware for the DOCSIS cable, PON fiber and mixed deployments.<p>",
+   "created_at": "2026-09-04T13:27:15Z",
+   "created_at_i": 1788528435,
+   "objectID": "90000148",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-04T13:28:51Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user32",
+    "story_90000001"
+   ],
+   "author": "user32",
+   "comment_text": "Yarrow Software | Head of Infrastructure Services | REMOTE | Full-time | 120k USD or local equivalent<p>I&#x27;m the Director of Technology at Yarrow Software and I&#x27;m looking for a Head of Infrastructure Services to join my team. This role will lead the strategy and evolution of Yarrow Software&#x27;s infrastructure ecosystem, own the infrastructure roadmap, and lead and develop our Infrastructure Services Team.<p>",
+   "created_at": "2026-09-04T10:06:07Z",
+   "created_at_i": 1788516367,
+   "objectID": "90000139",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-04T11:34:49Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user33",
+    "story_90000001"
+   ],
+   "author": "user33",
+   "comment_text": "Zephyr Studio | Research Engineer | Hong Kong&#x2F; London (onsite) | Full Time | Visa | Relocation<p>Zephyr Studio is a leading proprietary trading firm with an entrepreneurial and innovative Tech culture at the heart of its business. We are looking for Research Engineers in our Hong Kong office. Join us build and scale the research framework behind our systematic trading models. You’ll work closely with Quantitative Researchers, drive end‑to‑end ML pipelines, and shape global standards for data‑driven model development. Research Engineers have joint responsibility for conducting research and delivering models.<p>",
+   "created_at": "2026-09-04T02:33:45Z",
+   "created_at_i": 1788489225,
+   "objectID": "90000092",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-04T02:37:49Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user34",
+    "story_90000001"
+   ],
+   "author": "user34",
+   "children": [
+    90002864,
+    90002865
+   ],
+   "comment_text": "Fjord Networks is the AI tennis, pickleball, and padel app that provides automated stats, highlights, and line calling using just your phone. Our mission is to democratize the pro sports experience for all athletes.<p>All positions are in Berkeley, California:<p>- Data Labeling Intern: <a href=\"https:&#x2F;&#x2F;example.com&#x2F;job-boards&#x2F;swingvision&#x2F;job-details&#x2F;a9a74832-e3a2-4167-b289-b67594fd93d1\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;job-boards&#x2F;swingvision&#x2F;job-details&#x2F;a9a7...</a>.<p>- Head of Product: <a href=\"https:&#x2F;&#x2F;example.com&#x2F;swingvision&#x2F;job-details&#x2F;cb631dcb-1a80-4678-ab29-0ec2853c5ee4&#x2F;overview\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;swingvision&#x2F;job-details&#x2F;cb631dcb-1a80-...</a>.<p>- Head of Machine Learning:\n<a href=\"https:&#x2F;&#x2F;example.com&#x2F;swingvision&#x2F;job-details&#x2F;c2cc0f23-3e59-4c03-849e-d53e7567a3fd&#x2F;overview\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;swingvision&#x2F;job-details&#x2F;c2cc0f23-3e59-...</a>.<p>",
+   "created_at": "2026-09-04T01:31:43Z",
+   "created_at_i": 1788485503,
+   "objectID": "90000083",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-30T17:31:12Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user35",
+    "story_90000001"
+   ],
+   "author": "user35",
+   "comment_text": "Alder Networks | Multiple Engineering Roles | REMOTE (US, Canada, Europe) | Full-time | $140k-$220k USD | $140k-220k CAD | €80K – €145K + Equity<p>Alder Networks builds the software layer that turns hardware into a cloud. One platform to turn raw compute into every kind of cluster, for the teams building AI infrastructure and the customers they serve. We&#x27;re a VC-backed startup in hyper-growth and fully remote.<p>We have several open roles, here are a few to highlight:<p>Senior&#x2F;Staff Backend Engineer — Build controllers and operators at the core of the platform. Strong fit if you&#x27;ve authored Kubernetes controllers&#x2F;operators from scratch using kubebuilder, controller-runtime, or client-go. Apply: <a href=\"https:&#x2F;&#x2F;example.com&#x2F;careers\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;careers...</a> or <a href=\"https:&#x2F;&#x2F;example.com&#x2F;careers\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;careers...</a><p>",
+   "created_at": "2026-09-03T19:37:18Z",
+   "created_at_i": 1788464238,
+   "objectID": "90000248",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-03T19:45:36Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user36",
+    "story_90000001"
+   ],
+   "author": "user36",
+   "comment_text": "Basalt Systems | Manufacturing Engineer | On-site in Palo Alto, CA | Full time | $120k–$190k + equity<p>Basalt Systems is building the platform for physical AI.<p>Today, building robots and intelligent machines means navigating fragmented tools, incompatible hardware, and closed ecosystems. It takes too long, costs too much, and locks builders in. There is no default platform for physical AI. We&#x27;re building it. Basalt Systems brings together purpose-built hardware, developer tools, and AI models into one open, integrated system so that builders can create machines that sense, understand, and act in the real world.<p>",
+   "created_at": "2026-09-03T19:33:23Z",
+   "created_at_i": 1788464003,
+   "objectID": "90000108",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-03T19:45:36Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user37",
+    "story_90000001"
+   ],
+   "author": "user37",
+   "comment_text": "Coral Works | Senior Software Engineers — FDE, Full-Stack, Backend | US (Fully Remote) | Full-time | $160k–$240k + equity | <a href=\"https:&#x2F;&#x2F;example.com&#x2F;jobs\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com&#x2F;jobs</a><p>Coral Works builds the AI platform the world&#x27;s largest media agencies (Havas, Horizon Media, and others) use to run campaign workflows in production: audience building, media planning, measurement, and campaign analysis. Agentic workflows plus traditional ML, deployed on-premises inside agency cloud environments, directly on top of their data. We&#x27;re ~50 people, past PMF, well funded, and growing revenue quickly.<p>",
+   "created_at": "2026-09-03T18:14:42Z",
+   "created_at_i": 1788459282,
+   "objectID": "90000146",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-03T18:55:05Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user38",
+    "story_90000001"
+   ],
+   "author": "user38",
+   "comment_text": "Delta Digital | Engineers, PMs, Designers | On-site in Stockholm, Sweden | Full time<p>At Delta Digital we&#x27;re building a clinician copilot to allow clinicians to focus on care rather than administration. We’re building, launching and iterating quickly, and are rolling out across some of the largest care chains across Europe, including most of the NHS.<p>Our first product listens in to the patient-clinician encounter to generate medical records, allowing clinicians to save 5-10 minutes per patient. We&#x27;re rapidly expanding our product suite now, with medical coding and clinical decision support out today, and more products on the way.<p>We’re expanding our Stockholm team with exceptionally driven builders in a wide range of roles. Especially on the lookout for Product Manager, Head of Product Design, and Director of Engineering.<p>",
+   "created_at": "2026-09-03T17:50:21Z",
+   "created_at_i": 1788457821,
+   "objectID": "90000122",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-03T17:53:49Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user39",
+    "story_90000001"
+   ],
+   "author": "user39",
+   "comment_text": "Elm Software | Full-Stack Developer | Dallas, TX | REMOTE (US) or HYBRID | Full-time | example.com<p>We&#x27;re a Dental Support Organization running 65 practices across eight states. Dentistry doesn&#x27;t sound like a technical job, but the platform behind it is: we&#x27;ve built our own operations system (Rails 8 + React, Electron, Go, and C#&#x2F;.NET against OpenDental, all on AWS) and we&#x27;re pushing hard on automation and AI to make the practices run better.<p>",
+   "created_at": "2026-09-03T17:21:54Z",
+   "created_at_i": 1788456114,
+   "objectID": "90000038",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-14T16:58:37Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_user40",
+    "story_90000001"
+   ],
+   "author": "user40",
+   "comment_text": "Flint Studio | L3 Software Engineer | Full-Time | Remote, USA | 140 - 160k USD | Genomics Tech | <a href=\"https:&#x2F;&#x2F;example.com\" rel=\"nofollow\">https:&#x2F;&#x2F;example.com</a><p>Flint Studio, the leader in cfDNA testing, is expanding the EHR (Electronic Health Records) engineering team with a Software Engineer (L3) role. The team consists of 9 engineers mostly on the senior side with a heavy focus on interoperability, scalability, resilience and building net new capabilities. We are a hungry group of hackers who value quality, confidence and sensibility.<p>",
+   "created_at": "2026-09-03T16:56:06Z",
+   "created_at_i": 1788454566,
+   "objectID": "90000081",
+   "parent_id": 90000001,
+   "story_id": 90000001,
+   "story_title": "Ask HN: Who is hiring? (September 2026)",
+   "updated_at": "2026-09-03T17:01:33Z"
+  }
+ ],
+ "hitsPerPage": 100,
+ "nbHits": 40,
+ "nbPages": 1,
+ "page": 0,
+ "params": "tags=comment%2Cstory_90000001&numericFilters=parent_id%3D90000001&hitsPerPage=100&page=0&advancedSyntax=true&analyticsTags=backend",
+ "processingTimeMS": 1,
+ "processingTimingsMS": {
+  "_request": {
+   "queue": 31,
+   "roundTrip": 22
+  },
+  "afterFetch": {
+   "format": {
+    "highlighting": 7,
+    "total": 8
+   }
+  },
+  "total": 1
+ },
+ "query": "",
+ "serverTimeMS": 41
+}

@@ -1,0 +1,150 @@
+# Iobdesk: tutto in locale con `docker compose up -d --build`.
+# Unica porta pubblicata: web su 127.0.0.1:${APP_PORT}. Richiede Docker Compose v2.24+.
+name: job-aggregator
+
+x-restart: &restart
+  restart: unless-stopped
+
+services:
+  db:
+    <<: *restart
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-jobagg}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-jobagg_local_only}
+      POSTGRES_DB: ${POSTGRES_DB:-jobagg}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/10-init.sql:ro
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [backend]
+
+  api:
+    <<: *restart
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      target: runtime
+      args:
+        # immagine base alternativa (es. una copia locale, se Docker Hub non risponde)
+        NODE_IMAGE: ${NODE_IMAGE:-node:24-bookworm-slim}
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-jobagg}:${POSTGRES_PASSWORD:-jobagg_local_only}@db:5432/${POSTGRES_DB:-jobagg}?schema=public
+      GOTENBERG_URL: http://gotenberg:3000
+      OLLAMA_URL: http://ollama:11434
+      WHISPER_URL: http://whisper:9000
+      PIPER_URL: http://piper:5000
+      TZ: UTC
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID:-}
+      IMAP_HOST: ${IMAP_HOST:-}
+      IMAP_PORT: ${IMAP_PORT:-993}
+      IMAP_USER: ${IMAP_USER:-}
+      IMAP_PASSWORD: ${IMAP_PASSWORD:-}
+      IMAP_MAILBOX: ${IMAP_MAILBOX:-job-alerts}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
+      # indirizzo dell'app nel browser: Google ci rimanda qui dopo l'autorizzazione di Gmail
+      APP_PUBLIC_URL: http://127.0.0.1:${APP_PORT:-8080}
+      LLM_PROVIDER: ${LLM_PROVIDER:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    volumes:
+      # usato solo per il seed iniziale da search.yaml: mai riscritto
+      - ./config:/config:ro
+      - cvdata:/data/cv
+      # autorizzazione Google (refresh token): fuori dal database, mai esposta dall'API
+      - appstate:/data/state
+    depends_on:
+      db:
+        condition: service_healthy
+      gotenberg:
+        condition: service_started
+    networks: [backend, frontend]
+
+  web:
+    <<: *restart
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      target: runtime
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:24-bookworm-slim}
+        NGINX_IMAGE: ${NGINX_IMAGE:-nginxinc/nginx-unprivileged:1.29-alpine}
+    ports:
+      # solo loopback: l'app non è raggiungibile da altre macchine della rete
+      - '127.0.0.1:${APP_PORT:-8080}:80'
+    depends_on:
+      api:
+        condition: service_healthy
+    networks: [frontend]
+
+  gotenberg:
+    <<: *restart
+    image: gotenberg/gotenberg:8
+    # conversione DOCX → PDF per le anteprime dei CV; nessuna porta sull'host
+    healthcheck:
+      test: ['CMD', 'curl', '--silent', '--fail', 'http://localhost:3000/health']
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    networks: [backend]
+
+  ollama:
+    <<: *restart
+    image: ollama/ollama
+    profiles: ['llm']
+    volumes:
+      - ollama:/root/.ollama
+    networks: [backend, frontend]
+
+  # trascrizione locale delle risposte vocali dei colloqui simulati (Whisper); nessuna porta sull'host
+  whisper:
+    <<: *restart
+    image: onerahmet/openai-whisper-asr-webservice:latest
+    profiles: ['stt']
+    environment:
+      ASR_ENGINE: faster_whisper
+      ASR_MODEL: ${WHISPER_MODEL:-small}
+      ASR_MODEL_PATH: /data/whisper
+    volumes:
+      - whisper:/data/whisper
+    # frontend solo per scaricare il modello al primo avvio
+    networks: [backend, frontend]
+
+  # voce neurale locale dell'intervistatore nei colloqui simulati (Piper); nessuna porta sull'host
+  piper:
+    <<: *restart
+    build:
+      context: .
+      dockerfile: docker/piper/Dockerfile
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim}
+    profiles: ['tts']
+    environment:
+      # una voce per lingua, separate da virgola (elenco: https://huggingface.co/rhasspy/piper-voices)
+      PIPER_VOICES: ${PIPER_VOICES:-it_IT-paola-medium,en_US-lessac-medium,fr_FR-siwis-medium}
+    volumes:
+      - piper:/data/piper
+    # frontend solo per scaricare le voci al primo avvio
+    networks: [backend, frontend]
+
+networks:
+  # rete senza uscita verso l'esterno: db e gotenberg parlano solo con l'api
+  backend:
+    internal: true
+  # rete con uscita: l'api raggiunge le fonti degli annunci, ollama scarica i modelli
+  frontend: {}
+
+volumes:
+  pgdata:
+  cvdata:
+  appstate:
+  ollama:
+  whisper:
+  piper:

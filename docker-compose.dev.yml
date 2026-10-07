@@ -1,0 +1,63 @@
+# Sviluppo con hot reload. Uso:
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+# oppure, per caricarlo sempre in automatico, in .env:
+#   COMPOSE_FILE=docker-compose.yml:docker-compose.dev.yml
+# (equivale al classico docker-compose.override.yml, ma senza attivarsi per sbaglio in uso normale)
+services:
+  api:
+    # nome distinto dall'immagine di produzione, così le due non si sovrascrivono
+    image: job-aggregator-api-dev
+    build:
+      target: dev
+    entrypoint: []
+    working_dir: /repo
+    command:
+      - sh
+      - -c
+      - |
+        pnpm --filter @jobagg/shared build
+        pnpm --filter @jobagg/api exec prisma generate
+        pnpm --filter @jobagg/api exec prisma migrate deploy
+        pnpm --filter @jobagg/shared exec tsc -p tsconfig.build.json --watch --preserveWatchOutput &
+        exec pnpm --filter @jobagg/api start:dev
+    environment:
+      NODE_ENV: development
+      CV_DATA_DIR: /data/cv
+      STATE_DIR: /data/state
+      CONFIG_DIR: /repo/config
+    volumes:
+      - .:/repo
+      # node_modules resta dentro il container (binari Linux), mai sull'host
+      - /repo/node_modules
+      - /repo/apps/api/node_modules
+      - /repo/apps/web/node_modules
+      - /repo/packages/shared/node_modules
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 10s
+      timeout: 5s
+      start_period: 90s
+      retries: 12
+
+  web:
+    image: job-aggregator-web-dev
+    build:
+      target: dev
+    working_dir: /repo
+    command: ['pnpm', '--filter', '@jobagg/web', 'dev']
+    environment:
+      API_PROXY_TARGET: http://api:3000
+    ports: !override
+      - '127.0.0.1:${APP_PORT:-8080}:5173'
+    volumes:
+      - .:/repo
+      - /repo/node_modules
+      - /repo/apps/api/node_modules
+      - /repo/apps/web/node_modules
+      - /repo/packages/shared/node_modules
+    healthcheck:
+      disable: true

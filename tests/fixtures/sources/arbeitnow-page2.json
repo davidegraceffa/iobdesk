@@ -1,0 +1,89 @@
+{
+ "data": [
+  {
+   "slug": "product-manager-business-analyst-enterprise-banking-munich-9300014",
+   "company_name": "Opal Software",
+   "title": "Product Manager / Business Analyst (m/w/d) - Enterprise Banking",
+   "description": "<p><strong>Welcome to TEAM Opal</strong></p>\n<p>Wir sind Opal – Atlassian Platinum Solution Partner mit 100 % DevSecOps-DNA. Seit 2016 realisieren wir Enterprise-Projekte in den Bereichen ITSM, Social Intranets, Cloud-Infrastruktur und Identity Management und schaffen sichere, skalierbare und moderne Kollaborationsumgebungen – auch dort, wo Regulatorik und Informationssicherheit jedes Detail mitentscheiden. Zu unseren Kunden zählen Finanzmarktinfrastrukturen und große Enterprise-Organisationen in ganz Deutschland.</p>\n<p>",
+   "remote": false,
+   "url": "https://www.arbeitnow.com/jobs/companies/opal-software/product-manager-business-analyst-enterprise-banking-munich-451298",
+   "tags": [
+    "Business Analyst"
+   ],
+   "job_types": [
+    "berufserfahren"
+   ],
+   "location": "Munich",
+   "created_at": 1790839824
+  },
+  {
+   "slug": "ai-content-creator-e-commerce-brand-designer-mwd-hamburg-9300015",
+   "company_name": "Amber Networks",
+   "title": "AI Content Creator & E-Commerce Brand Designer (m,w,d)",
+   "description": "<h2>Mach aus Ideen starke Markenbilder</h2><p>Du hast ein gutes Auge, denkst digital und probierst gern Neues aus. Mit generativer KI machst du aus Ideen starke Bilder und Videos, die unsere Produkte im Shop und auf Social Media zum Hingucker machen.</p><h2>Über Amber Networks</h2><p>Wir sind Amber Networks – First Mover im Mini-Sirup-Segment. Unsere zuckerfreien, hochkonzentrierten Sirupe machen aus Wasser im Handumdrehen einen fruchtigen Drink oder Eistee. Klein im Format, groß im Geschmack – und immer offen für neue Ideen</p><h2>Was du bei uns gestaltest</h2><ul><li><p><strong>Bildwelten mit KI entwickeln:</strong>",
+   "remote": false,
+   "url": "https://www.arbeitnow.com/jobs/companies/Amber Networks-gmbh/ai-content-creator-e-commerce-brand-designer-mwd-hamburg-324292",
+   "tags": [
+    "Graphic Arts and Communication Design"
+   ],
+   "job_types": [
+    "Unbefristeter arbeitsvertrag",
+    "berufserfahren"
+   ],
+   "location": "Hamburg",
+   "created_at": 1790839823
+  },
+  {
+   "slug": "teamleiter-im-finanzvertrieb-german-speaking-celle-9300016",
+   "company_name": "Birch Systems",
+   "title": "Teamleiter (m/w/d) im Finanzvertrieb (German Speaking)",
+   "description": "<p style=\";\"><strong>Du bist eine Führungspersönlichkeit, die Verlässlichkeit, klare Strukturen und Teamgeist lebt?</strong><br /><span style=\"color: #000000\">Übernimm Verantwortung, optimiere Prozesse und führe dein Team zu Höchstleistungen. Begeistere unsere Kunden mit ehrlicher Beratung und nachhaltigen Konzepten und wachse mit uns in einem Umfeld mit klaren Zielen und einem starken Team!</span></p><p style=\";;\"></p><p style=\";\"><strong>Deine Aufgaben</strong></p><ul><li><p>Führung und Motivation eines Teams aus Finanzberatern.</p></li><li><p>Optimierung von Prozessen und strategische Planung von Vertriebsaktivitäten.</p></li><li><p>",
+   "remote": false,
+   "url": "https://www.arbeitnow.com/jobs/companies/Birch Systems/teamleiter-im-finanzvertrieb-german-speaking-celle-40519",
+   "tags": [
+    "Finance",
+    "vocational"
+   ],
+   "job_types": [
+    "Full-time permanent",
+    "mid"
+   ],
+   "location": "Celle",
+   "created_at": 1790839210
+  },
+  {
+   "slug": "senior-consultant-sap-bi-business-intelligence-heidelberg-9300017",
+   "company_name": "Cedar Works",
+   "title": "(Senior) Consultant SAP BI/ Business Intelligence (m/w/d)",
+   "description": "<p style=\";\"><strong>Wir sind die Berater der Weltmarktführer: Hochmotivierte Expertinnen und Experten, die als erfolgreiches Team digitale End-to-End-Geschäftsprozesslösungen vorantreiben. Gemeinsam stärken wir die Zukunft der beeindruckendsten Unternehmen der Welt aus Maschinen- und Anlagenbau, Automotive, Life Science, Pharma und Chemie, mit denen wir viel gemeinsam haben.</strong></p><p style=\";\">",
+   "remote": false,
+   "url": "https://www.arbeitnow.com/jobs/companies/cedar-works/senior-consultant-sap-bi-business-intelligence-heidelberg-305670",
+   "tags": [
+    "Consulting",
+    "high school coursework"
+   ],
+   "job_types": [
+    "Full-time permanent",
+    "mid"
+   ],
+   "location": "Heidelberg",
+   "created_at": 1790839210
+  }
+ ],
+ "links": {
+  "first": "https://www.arbeitnow.com/api/job-board-api?page=1",
+  "last": null,
+  "prev": "https://www.arbeitnow.com/api/job-board-api?page=1",
+  "next": null
+ },
+ "meta": {
+  "current_page": 2,
+  "current_page_url": "https://www.arbeitnow.com/api/job-board-api?page=2",
+  "from": 101,
+  "path": "https://www.arbeitnow.com/api/job-board-api",
+  "per_page": 325,
+  "to": 325,
+  "terms": "This is a free public API for jobs, please do not abuse. I would appreciate linking back to the site. By using the API, you agree to the terms of service present on Arbeitnow.com",
+  "info": "Jobs are updated every hour and order by the `created_at` timestamp. Use `?page=` to paginate. Read more information here: https://www.arbeitnow.com/blog/job-board-api"
+ }
+}
